@@ -1,0 +1,310 @@
+\documentclass{article}
+\usepackage{url}
+\input{/home/pd83/notation.tex}
+\begin{document}
+\title{Spherically-symmetric constant-density object}
+\author{Peter C. Doerschuk}
+\maketitle
+Let $R_o$ (``o'' for ``object'') be the radius of the object and $\rho_0$
+be the density of the object:
+\begin{equation}
+\rho(\vx)
+=
+\left\{
+\begin{array}{ll}
+\rho_0 & |\vx|\le R_o \\
+0 & \mbox{otherwise}
+\end{array}
+\right.
+.
+\end{equation}
+From Ref.~\cite[Eq.~16.127]{Jackson1975},
+\begin{eqnarray}
+\exp(i\vk^T \vx)
+&=&
+4\pi
+\sum_{l=0}^\infty
+i^l
+j_l(kx)
+\sum_{m=-1}^{+l}
+Y_{l,m}^\ast(\thetap,\phip)
+Y_{l,m}(\theta,\phi)
+\\
+\Leftrightarrow
+\exp(i 2\pi \vk^T \vx)
+&=&
+4\pi
+\sum_{l=0}^\infty
+i^l
+j_l(2\pi kx)
+\sum_{m=-1}^{+l}
+Y_{l,m}^\ast(\thetap,\phip)
+Y_{l,m}(\theta,\phi)
+\\
+\Leftrightarrow
+\exp(-i 2\pi \vk^T \vx)
+&=&
+4\pi
+\sum_{l=0}^\infty
+(-i)^l
+j_l(2\pi kx)
+\sum_{m=-1}^{+l}
+Y_{l,m}(\thetap,\phip)
+Y_{l,m}^\ast(\theta,\phi)
+.
+\end{eqnarray}
+Therefore,
+\begin{eqnarray}
+P(\vk)
+&=&
+\int_{\vx\in\reals^3}
+\rho(\vx) \exp(-i 2\pi\vk^T \vx) \dd\vx
+\\
+&=&
+\int_{\vx\in\reals^3}
+\rho(\vx)
+\left[
+4\pi
+\sum_{l=0}^\infty
+(-i)^l
+j_l(2\pi kx)
+\sum_{m=-1}^{+l}
+Y_{l,m}(\thetap,\phip)
+Y_{l,m}^\ast(\theta,\phi)
+\right]
+\dd\vx
+\\
+&=&
+\int_{x=0}^{R_o}
+\int
+\rho_0
+\left[
+4\pi
+\sum_{l=0}^\infty
+(-i)^l
+j_l(2\pi kx)
+\sum_{m=-1}^{+l}
+Y_{l,m}(\thetap,\phip)
+Y_{l,m}^\ast(\theta,\phi)
+\right]
+x^2 \dd x
+\dd\Omega
+\\
+&=&
+\rho_0
+4\pi
+\sum_{l=0}^\infty
+(-i)^l
+\left[
+\int_{x=0}^{R_o}
+j_l(2\pi kx)
+x^2 \dd x
+\right]
+\sum_{m=-1}^{+l}
+Y_{l,m}(\thetap,\phip)
+\left[
+\int
+Y_{l,m}(\theta,\phi)
+\dd\Omega
+\right]^\ast
+\\
+&=&
+\rho_0
+4\pi
+\sum_{l=0}^\infty
+(-i)^l
+\left[
+\int_{x=0}^{R_o}
+j_l(2\pi kx)
+x^2 \dd x
+\right]
+\sum_{m=-1}^{+l}
+Y_{l,m}(\thetap,\phip)
+\left[
+\sqrt{4\pi}\delta_{l,0}\delta_{m,0}
+\right]^\ast
+\\
+&=&
+\rho_0
+4\pi
+(-i)^0
+\left[
+\int_{x=0}^{R_o}
+j_0(2\pi kx)
+x^2 \dd x
+\right]
+Y_{0,0}(\thetap,\phip)
+\sqrt{4\pi}
+\\
+&=&
+\rho_0
+4\pi
+\left[
+\int_{x=0}^{R_o}
+j_0(2\pi kx)
+x^2 \dd x
+\right]
+\frac{1}{\sqrt{4\pi}}
+\sqrt{4\pi}
+\\
+&=&
+\rho_0
+4\pi
+\int_{x=0}^{R_o}
+j_0(2\pi kx)
+x^2 \dd x
+.
+\end{eqnarray}
+\par
+Replace $x$ by $\gamma$ defined by
+\begin{eqnarray}
+\gamma
+&=&
+2\pi kx
+\\
+\dd\gamma
+&=&
+2\pi k \dd x
+\\
+x=0
+&\Leftrightarrow&
+\gamma=0
+\\
+x=R_o
+&\Leftrightarrow&
+\gamma=2\pi k R_o
+\end{eqnarray}
+to get
+\begin{eqnarray}
+P(\vk)
+&=&
+\rho_0
+4\pi
+\int_{\gamma=0}^{2\pi kR_o}
+j_0(\gamma)
+\left(\frac{\gamma}{2\pi k}\right)^2
+\frac{\dd\gamma}{2\pi k}
+\\
+&=&
+\rho_0
+4\pi
+\frac{1}{(2\pi k)^3}
+\int_{\gamma=0}^{2\pi kR_o}
+\gamma^2
+j_0(\gamma)
+\dd\gamma
+.
+\end{eqnarray}
+\par
+Ref.~\cite[Eq.~10.47.3]{OlverLozierBoisvertClark2010} is
+\begin{equation}
+j_n(z)
+=
+\sqrt{\frac{\pi}{2z}} J_{n+\frac{1}{2}}(z)
+.
+\end{equation}
+Therefore ($n=0$ and $z=\gamma$),
+\begin{eqnarray}
+P(\vk)
+&=&
+\rho_0
+4\pi
+\frac{1}{(2\pi k)^3}
+\int_{\gamma=0}^{2\pi kR_o}
+\gamma^2
+\sqrt{\frac{\pi}{2\gamma}} J_{0+\frac{1}{2}}(\gamma)
+\dd\gamma
+\\
+&=&
+\rho_0
+4\pi
+\frac{1}{(2\pi k)^3}
+\sqrt{\frac{\pi}{2}}
+\int_{\gamma=0}^{2\pi kR_o}
+\gamma^{(\frac{1}{2}+1)}
+J_{\frac{1}{2}}(\gamma)
+\dd\gamma
+.
+\end{eqnarray}
+\par
+Ref.~\cite[Eq.~10.22.1]{OlverLozierBoisvertClark2010} is the indefinite integral
+\begin{equation}
+\int z^{\nu+1} \calC_\nu(z) \dd z
+=
+z^{\nu+1} \calC_{\nu+1}(z)
+.
+\end{equation}
+Therefore ($\calC=J$, $\nu=\frac{1}{2}$),
+\begin{eqnarray}
+P(\vk)
+&=&
+\rho_0
+4\pi
+\frac{1}{(2\pi k)^3}
+\sqrt{\frac{\pi}{2}}
+\left.
+\gamma^{(\frac{1}{2}+1)}
+J_{1+\frac{1}{2}}(\gamma)
+\right|_{\gamma=0}^{2\pi kR_o}
+\\
+&=&
+\rho_0
+4\pi
+\frac{1}{(2\pi k)^3}
+\sqrt{\frac{\pi}{2}}
+(2\pi kR_o)^{(\frac{1}{2}+1)}
+J_{1+\frac{1}{2}}(2\pi kR_o)
+.
+\end{eqnarray}
+\par
+Ref.~\cite[Eq.~10.47.3]{OlverLozierBoisvertClark2010} in the reverse direction is
+\begin{equation}
+J_{n+\frac{1}{2}}(z)
+=
+\sqrt{\frac{2z}{\pi}}
+j_n(z)
+.
+\end{equation}
+Therefore ($n=1$ and $z=2\pi kR_o$),
+\begin{eqnarray}
+P(\vk)
+&=&
+\rho_0
+4\pi
+\frac{1}{(2\pi k)^3}
+\sqrt{\frac{\pi}{2}}
+(2\pi kR_o)^{(\frac{1}{2}+1)}
+\sqrt{\frac{2\times 2\pi kR_o}{\pi}}
+j_1(2\pi kR_o)
+\\
+&=&
+\rho_0
+4\pi
+\frac{1}{(2\pi k)^3}
+(2\pi kR_o)^2
+j_1(2\pi kR_o)
+\\
+&=&
+\rho_0
+4\pi
+R_o^3
+\frac{1}{(2\pi kR_o)^3}
+(2\pi kR_o)^2
+j_1(2\pi kR_o)
+\\
+&=&
+\rho_0
+4\pi
+R_o^3
+\frac{1}{2\pi kR_o}
+j_1(2\pi kR_o)
+.
+\end{eqnarray}
+Except for the replacement of ``$k$'' by ``$2\pi k$'', this formula matches
+Ref.~\cite[formula between Eqs.~20
+  and~21]{ZhengDoerschukJohnsonBiophysicalJ1995}.
+%\bibliographystyle{unsrt}
+%\bibliographystyle{alpha}
+\bibliographystyle{abbrv}
+\bibliography{/home/pd83/references}
+\end{document}

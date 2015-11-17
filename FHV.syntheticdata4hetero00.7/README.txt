@@ -1,0 +1,10 @@
+addpath /home/pd83/hetero/FHV.syntheticdata4hetero00.7
+addpath /home/pd83/hetero/hetero00.71
+addpath /home/pd83/hetero/FredSigworth/EMIODist
+matlabpool local 12
+inst_Neta2_rule49_Nv500_fw
+inst_showimage.m
+inst_Neta2_rule49_Nv500_homo_inv
+inst_Neta2_rule49_Nv500_pre4hetero_inv
+inst_Neta2_rule49_Nv500_hetero_inv.m
+inst_Neta2_rule49_Nv500_post.m

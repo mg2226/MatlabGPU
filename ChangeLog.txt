@@ -1,0 +1,6 @@
+
+2014-08-15	Yunhan Wang	<yw559@cornell.edu>
+
+* EM_expmax_iterate2convergence: commented out fprintf() and display_v()
+	otherwise there are too many lines printed in console. Lines started with "%%%" are commented ones.
+

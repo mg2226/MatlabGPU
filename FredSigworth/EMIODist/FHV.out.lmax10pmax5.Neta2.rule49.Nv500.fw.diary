@@ -1,0 +1,21 @@
+hetero: ii 2 misc_setpseudorandomnumberseed pseudorandomnumberseed 383511
+hetero: ii 3 basic_set2Drealspacesamplingintervals deltachi(1) 4.7 deltachi(2) 4.7
+hetero: ii 4 basic_setsizeof2Drealspaceimages Na 91 Nb 91
+hetero: ii 5 basic_compute2Dreciprocalspaceproperties
+hetero: ii 6 quad_read_integration_rule fn_rule rule_small_3_rulechopper
+hetero: ii 7 vobj_read_virusobj fn_clnp FHV.lmax10pmax5.clnp.txt fn_nu FHV.lmax10pmax5.nu.txt fn_q FHV.lmax10pmax5.q.txt
+hetero: ii 7 vobj_read_virusobj fn_clnp FHV.lmax10pmax5.clnp.perturbed.txt fn_nu FHV.lmax10pmax5.nu.perturbed.txt fn_q FHV.lmax10pmax5.q.perturbed.txt
+virusobj_read: eta 1, R1 -1, R2 197.4
+virusobj_read: eta 2, R1 -1, R2 170
+hetero: ii 8 EM_set_2Dreciprocal_in_virusobj use_vkminimalset_rather_than_vk 1
+virusobj_set_2Dreciprocal: vobj{eta}.R1<0.0 means use H_{l,p}(r) on [0,R_2)
+virusobj_set_2Dreciprocal: vobj{eta}.R1>=0.0 means use H_{l,p}(r) on (R_1,R_2) with R_1>=0
+virusobj_set_2Dreciprocal: the reciprocal-space radial basis functions are the same for all values of vobj{eta}.BasisFunctionType: 
+virusobj_set_2Dreciprocal: vobj{eta=1}.BasisFunctionType=1
+virusobj_set_2Dreciprocal: vobj{eta=2}.BasisFunctionType=1
+hetero: ii 9 EM_read_tilde_b fn_tilde_b callti.out.read_by_C
+hetero: ii 10 fw_mk_synthetic_2D_realspace_images Nv 500 NT 1 SNR 5
+fw: cov_all_pixels 8594.42 SNR 5 stddev_of_noise 18.5412
+fw: pixelnoisevar 343.777
+hetero: ii 11 misc_write_mrc fn_write_mrc FHV.out.lmax10pmax5.Neta2.rule49.Nv500.fw.imagestack.mrc what2write write_image_stack
+hetero: ii 12 misc_diary fn_diary off

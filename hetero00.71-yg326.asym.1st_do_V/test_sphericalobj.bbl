@@ -1,0 +1,20 @@
+\begin{thebibliography}{1}
+
+\bibitem{Jackson1975}
+J.~D. Jackson.
+\newblock {\em Classical Electrodynamics}.
+\newblock John Wiley, New York, 2nd edition, 1975.
+
+\bibitem{OlverLozierBoisvertClark2010}
+F.~W.~J. Olver, D.~W. Lozier, R.~F. Boisvert, and C.~W. Clark, editors.
+\newblock {\em NIST Handbook of Mathematical Functions}.
+\newblock Cambridge University Press, Cambridge, UK, 2010.
+\newblock {\url{http://dlmf.nist.gov}}.
+
+\bibitem{ZhengDoerschukJohnsonBiophysicalJ1995}
+Y.~Zheng, P.~C. Doerschuk, and J.~E. Johnson.
+\newblock Determination of three-dimensional low-resolution viral structure
+  from solution x-ray scattering data.
+\newblock {\em Biophys. J.}, 69(2):619--639, Aug. 1995.
+
+\end{thebibliography}

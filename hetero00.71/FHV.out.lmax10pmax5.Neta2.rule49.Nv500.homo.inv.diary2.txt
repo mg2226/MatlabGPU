@@ -1,0 +1,1 @@
+hetero: ii 25 misc_diary fn_diary off

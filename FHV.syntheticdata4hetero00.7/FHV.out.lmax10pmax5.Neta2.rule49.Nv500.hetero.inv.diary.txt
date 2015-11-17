@@ -1,0 +1,2800 @@
+hetero: ii 2 box_readpixelnoisevar fn_pixelnoisevar step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.pixelnoisevar.txt
+hetero: ii 2 box_readpixelnoisevar pixelnoisevar 1.4237e+06
+hetero: ii 3 box_readImagestack: Imagestackformat mrc fn_Imagestack FHV.out.lmax10pmax5.Neta2.rule49.Nv500.pre4hetero.inv.Imagestack.mrc
+hetero: ii 3 box_readImagestack: mrc: startSlice 1 numSlices 500
+
+test1 =
+
+  2.5526e+05
+
+
+test1 =
+
+  2.5526e+05
+
+<a href="matlab: opentoline('/profession/[14Spring]-MEng Project/pd83@ece.cornell.edu/hetero00.71/hetero.m',220,1)">220 </a>      fprintf(1,'hetero: ii %d basic_setsizeof2DreciprocalspaceImagesfromImagestack\n',ii);
+if system_dependent('IsDebugMode')==1, dbquit; end
+hetero: ii 2 box_readpixelnoisevar fn_pixelnoisevar step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.pixelnoisevar.txt
+hetero: ii 2 box_readpixelnoisevar pixelnoisevar 1.4237e+06
+hetero: ii 3 box_readImagestack: Imagestackformat mrc fn_Imagestack FHV.out.lmax10pmax5.Neta2.rule49.Nv500.pre4hetero.inv.Imagestack.mrc
+hetero: ii 3 box_readImagestack: mrc: startSlice 1 numSlices 500
+
+test1 =
+
+  2.5526e+05
+
+
+test1 =
+
+  2.5526e+05
+
+hetero: ii 4 basic_setsizeof2DreciprocalspaceImagesfromImagestack
+hetero: ii 5 basic_set2Drealspacesamplingintervals deltachi(1) 4.7 deltachi(2) 4.7
+hetero: ii 6 basic_compute2Dreciprocalspaceproperties
+hetero: ii 7 vobj_read_virusobj fn_clnp step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.clnp.txt fn_nu step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.nu.txt fn_q step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.q.txt
+hetero: ii 7 vobj_read_virusobj fn_clnp step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.clnp.txt fn_nu step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.nu.txt fn_q step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.q.txt
+virusobj_read: eta 1, R1 -1, R2 197.4
+rd_nu: nu has zero length.  Therefore will solve a homogeneous problem.
+virusobj_read: eta 2, R1 -1, R2 170
+rd_nu: nu has zero length.  Therefore will solve a homogeneous problem.
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj:
+hetero: ii 8 homo2hetero:
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj eta 1 action 1
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj eta 2 action 1
+virusobj_change_homo2hetero: eta 1: make heterogeneous
+virusobj_change_homo2hetero: eta 2: make heterogeneous
+hetero: ii 9 vobj_print_virusobj
+vobj_print_virusobj: eta 1 clnp_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.clnp.txt nu_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.nu.txt q_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.q.txt
+vobj_print_virusobj: eta 1 clnp.il:
+  Columns 1 through 14
+
+     0     0     0     0     0     6     6     6     6     6    10    10    10    10
+
+  Column 15
+
+    10
+
+vobj_print_virusobj: eta 1 clnp.in:
+  Columns 1 through 14
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Column 15
+
+     0
+
+vobj_print_virusobj: eta 1 clnp.ip:
+  Columns 1 through 14
+
+     1     2     3     4     5     1     2     3     4     5     1     2     3     4
+
+  Column 15
+
+     5
+
+vobj_print_virusobj: eta 1 clnp.optflag:
+  Columns 1 through 14
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Column 15
+
+     1
+
+vobj_print_virusobj: eta 1 clnp.c:
+  Columns 1 through 8
+
+ -107.6710  -33.4717    0.9476   14.7346   22.7187  -11.8062  -14.9936   -3.2540
+
+  Columns 9 through 15
+
+    4.7751    3.9206   12.7192    2.3094   -1.8897   -2.4752   -3.4167
+
+vobj_print_virusobj: eta 1 cbar:
+  Columns 1 through 8
+
+ -107.6710  -33.4717    0.9476   14.7346   22.7187  -11.8062  -14.9936   -3.2540
+
+  Columns 9 through 15
+
+    4.7751    3.9206   12.7192    2.3094   -1.8897   -2.4752   -3.4167
+
+vobj_print_virusobj: eta 1 BasisFunctionType 1
+vobj_print_virusobj: eta 1 R1 -1 R2 197.4
+vobj_print_virusobj: eta 1 nu:
+  Columns 1 through 8
+
+    4.6372    0.4481    0.0725    0.0868    0.2065    0.0725    0.0899    0.0725
+
+  Columns 9 through 15
+
+    0.0725    0.0725    0.0725    0.0725    0.0725    0.0725    0.0725
+
+vobj_print_virusobj: eta 1 q 0.568
+vobj_print_virusobj: eta 2 clnp_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.clnp.txt nu_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.nu.txt q_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.q.txt
+vobj_print_virusobj: eta 2 clnp.il:
+  Columns 1 through 14
+
+     0     0     0     0     0     6     6     6     6     6    10    10    10    10
+
+  Column 15
+
+    10
+
+vobj_print_virusobj: eta 2 clnp.in:
+  Columns 1 through 14
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Column 15
+
+     0
+
+vobj_print_virusobj: eta 2 clnp.ip:
+  Columns 1 through 14
+
+     1     2     3     4     5     1     2     3     4     5     1     2     3     4
+
+  Column 15
+
+     5
+
+vobj_print_virusobj: eta 2 clnp.optflag:
+  Columns 1 through 14
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Column 15
+
+     1
+
+vobj_print_virusobj: eta 2 clnp.c:
+  Columns 1 through 8
+
+ -103.7730  -33.3143   -1.0873   14.0521   23.7669    9.2062    7.7516    3.0300
+
+  Columns 9 through 15
+
+   -2.3581   -1.6140    7.6865    3.1821   -0.9742   -3.2610   -2.1209
+
+vobj_print_virusobj: eta 2 cbar:
+  Columns 1 through 8
+
+ -103.7730  -33.3143   -1.0873   14.0521   23.7669    9.2062    7.7516    3.0300
+
+  Columns 9 through 15
+
+   -2.3581   -1.6140    7.6865    3.1821   -0.9742   -3.2610   -2.1209
+
+vobj_print_virusobj: eta 2 BasisFunctionType 1
+vobj_print_virusobj: eta 2 R1 -1 R2 170
+vobj_print_virusobj: eta 2 nu:
+  Columns 1 through 8
+
+    4.3075    0.4439    0.0673    0.0790    0.2259    0.0673    0.0673    0.0673
+
+  Columns 9 through 15
+
+    0.0673    0.0673    0.0673    0.0673    0.0673    0.0673    0.0673
+
+vobj_print_virusobj: eta 2 q 0.432
+hetero: ii 10 misc_diary fn_diary off
+hetero: ii 2 box_readpixelnoisevar fn_pixelnoisevar step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.pixelnoisevar.txt
+hetero: ii 2 box_readpixelnoisevar pixelnoisevar 1.4237e+06
+hetero: ii 3 box_readImagestack: Imagestackformat mrc fn_Imagestack FHV.out.lmax10pmax5.Neta2.rule49.Nv500.pre4hetero.inv.Imagestack.mrc
+hetero: ii 3 box_readImagestack: mrc: startSlice 1 numSlices 500
+
+test1 =
+
+  2.5526e+05
+
+
+test1 =
+
+  2.5526e+05
+
+<a href="matlab: opentoline('/profession/[14Spring]-MEng Project/pd83@ece.cornell.edu/hetero00.71/hetero.m',220,1)">220 </a>      fprintf(1,'hetero: ii %d basic_setsizeof2DreciprocalspaceImagesfromImagestack\n',ii);
+if system_dependent('IsDebugMode')==1, dbstep; end
+hetero: ii 4 basic_setsizeof2DreciprocalspaceImagesfromImagestack
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbquit; end
+inst_Neta2_rule49_Nv500_hetero_inv()
+inst_Neta2_rule49_Nv500_hetero_inv: outputbasename FHV.out.lmax10pmax5.Neta2.rule49.Nv500.hetero.inv
+{Undefined function or variable "Imagestack".
+
+Error in <a href="matlab:helpUtils.errorDocCallback('hetero', '/profession/[14Spring]-MEng Project/pd83@ece.cornell.edu/hetero00.71/hetero.m', 9)" style="font-weight:bold">hetero</a> (<a href="matlab: opentoline('/profession/[14Spring]-MEng Project/pd83@ece.cornell.edu/hetero00.71/hetero.m',9,0)">line 9</a>)
+  display(size(Imagestack))
+
+Error in <a href="matlab:helpUtils.errorDocCallback('inst_Neta2_rule49_Nv500_hetero_inv', '/profession/[14Spring]-MEng Project/pd83@ece.cornell.edu/FHV.syntheticdata4hetero00.7/inst_Neta2_rule49_Nv500_hetero_inv.m', 159)" style="font-weight:bold">inst_Neta2_rule49_Nv500_hetero_inv</a> (<a href="matlab: opentoline('/profession/[14Spring]-MEng Project/pd83@ece.cornell.edu/FHV.syntheticdata4hetero00.7/inst_Neta2_rule49_Nv500_hetero_inv.m',159,0)">line 159</a>)
+hetero(cmd);
+} 
+inst_Neta2_rule49_Nv500_hetero_inv()
+inst_Neta2_rule49_Nv500_hetero_inv: outputbasename FHV.out.lmax10pmax5.Neta2.rule49.Nv500.hetero.inv
+
+Imagestack =
+
+     []
+
+
+ans =
+
+     0     0
+
+hetero: ii 1 misc_diary fn_diary FHV.out.lmax10pmax5.Neta2.rule49.Nv500.hetero.inv.diary.txt
+
+ans =
+
+     0     0
+
+hetero: ii 2 box_readpixelnoisevar fn_pixelnoisevar step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.pixelnoisevar.txt
+hetero: ii 2 box_readpixelnoisevar pixelnoisevar 1.4237e+06
+
+ans =
+
+     0     0
+
+hetero: ii 3 box_readImagestack: Imagestackformat mrc fn_Imagestack FHV.out.lmax10pmax5.Neta2.rule49.Nv500.pre4hetero.inv.Imagestack.mrc
+hetero: ii 3 box_readImagestack: mrc: startSlice 1 numSlices 500
+
+test1 =
+
+  2.5526e+05
+
+
+test1 =
+
+  2.5526e+05
+
+
+ans =
+
+   500     1
+
+hetero: ii 4 basic_setsizeof2DreciprocalspaceImagesfromImagestack
+
+ans =
+
+   500     1
+
+hetero: ii 5 basic_set2Drealspacesamplingintervals deltachi(1) 4.7 deltachi(2) 4.7
+
+ans =
+
+   500     1
+
+hetero: ii 6 basic_compute2Dreciprocalspaceproperties
+
+ans =
+
+   500     1
+
+hetero: ii 7 vobj_read_virusobj fn_clnp step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.clnp.txt fn_nu step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.nu.txt fn_q step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.q.txt
+hetero: ii 7 vobj_read_virusobj fn_clnp step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.clnp.txt fn_nu step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.nu.txt fn_q step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.q.txt
+virusobj_read: eta 1, R1 -1, R2 197.4
+rd_nu: nu has zero length.  Therefore will solve a homogeneous problem.
+virusobj_read: eta 2, R1 -1, R2 170
+rd_nu: nu has zero length.  Therefore will solve a homogeneous problem.
+
+ans =
+
+   500     1
+
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj:
+hetero: ii 8 homo2hetero:
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj eta 1 action 1
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj eta 2 action 1
+virusobj_change_homo2hetero: eta 1: make heterogeneous
+virusobj_change_homo2hetero: eta 2: make heterogeneous
+
+ans =
+
+   500     1
+
+hetero: ii 9 vobj_print_virusobj
+vobj_print_virusobj: eta 1 clnp_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.clnp.txt nu_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.nu.txt q_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.q.txt
+vobj_print_virusobj: eta 1 clnp.il:
+  Columns 1 through 14
+
+     0     0     0     0     0     6     6     6     6     6    10    10    10    10
+
+  Column 15
+
+    10
+
+vobj_print_virusobj: eta 1 clnp.in:
+  Columns 1 through 14
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Column 15
+
+     0
+
+vobj_print_virusobj: eta 1 clnp.ip:
+  Columns 1 through 14
+
+     1     2     3     4     5     1     2     3     4     5     1     2     3     4
+
+  Column 15
+
+     5
+
+vobj_print_virusobj: eta 1 clnp.optflag:
+  Columns 1 through 14
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Column 15
+
+     1
+
+vobj_print_virusobj: eta 1 clnp.c:
+  Columns 1 through 8
+
+ -107.6710  -33.4717    0.9476   14.7346   22.7187  -11.8062  -14.9936   -3.2540
+
+  Columns 9 through 15
+
+    4.7751    3.9206   12.7192    2.3094   -1.8897   -2.4752   -3.4167
+
+vobj_print_virusobj: eta 1 cbar:
+  Columns 1 through 8
+
+ -107.6710  -33.4717    0.9476   14.7346   22.7187  -11.8062  -14.9936   -3.2540
+
+  Columns 9 through 15
+
+    4.7751    3.9206   12.7192    2.3094   -1.8897   -2.4752   -3.4167
+
+vobj_print_virusobj: eta 1 BasisFunctionType 1
+vobj_print_virusobj: eta 1 R1 -1 R2 197.4
+vobj_print_virusobj: eta 1 nu:
+  Columns 1 through 8
+
+    4.6372    0.4481    0.0725    0.0868    0.2065    0.0725    0.0899    0.0725
+
+  Columns 9 through 15
+
+    0.0725    0.0725    0.0725    0.0725    0.0725    0.0725    0.0725
+
+vobj_print_virusobj: eta 1 q 0.568
+vobj_print_virusobj: eta 2 clnp_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.clnp.txt nu_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.nu.txt q_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.q.txt
+vobj_print_virusobj: eta 2 clnp.il:
+  Columns 1 through 14
+
+     0     0     0     0     0     6     6     6     6     6    10    10    10    10
+
+  Column 15
+
+    10
+
+vobj_print_virusobj: eta 2 clnp.in:
+  Columns 1 through 14
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Column 15
+
+     0
+
+vobj_print_virusobj: eta 2 clnp.ip:
+  Columns 1 through 14
+
+     1     2     3     4     5     1     2     3     4     5     1     2     3     4
+
+  Column 15
+
+     5
+
+vobj_print_virusobj: eta 2 clnp.optflag:
+  Columns 1 through 14
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Column 15
+
+     1
+
+vobj_print_virusobj: eta 2 clnp.c:
+  Columns 1 through 8
+
+ -103.7730  -33.3143   -1.0873   14.0521   23.7669    9.2062    7.7516    3.0300
+
+  Columns 9 through 15
+
+   -2.3581   -1.6140    7.6865    3.1821   -0.9742   -3.2610   -2.1209
+
+vobj_print_virusobj: eta 2 cbar:
+  Columns 1 through 8
+
+ -103.7730  -33.3143   -1.0873   14.0521   23.7669    9.2062    7.7516    3.0300
+
+  Columns 9 through 15
+
+   -2.3581   -1.6140    7.6865    3.1821   -0.9742   -3.2610   -2.1209
+
+vobj_print_virusobj: eta 2 BasisFunctionType 1
+vobj_print_virusobj: eta 2 R1 -1 R2 170
+vobj_print_virusobj: eta 2 nu:
+  Columns 1 through 8
+
+    4.3075    0.4439    0.0673    0.0790    0.2259    0.0673    0.0673    0.0673
+
+  Columns 9 through 15
+
+    0.0673    0.0673    0.0673    0.0673    0.0673    0.0673    0.0673
+
+vobj_print_virusobj: eta 2 q 0.432
+
+ans =
+
+   500     1
+
+hetero: ii 10 misc_diary fn_diary off
+hetero: ii 2 box_readpixelnoisevar fn_pixelnoisevar step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.pixelnoisevar.txt
+hetero: ii 2 box_readpixelnoisevar pixelnoisevar 1.4237e+06
+hetero: ii 3 box_readImagestack: Imagestackformat mrc fn_Imagestack FHV.out.lmax10pmax5.Neta2.rule49.Nv500.pre4hetero.inv.Imagestack.mrc
+hetero: ii 3 box_readImagestack: mrc: startSlice 1 numSlices 500
+
+test1 =
+
+  2.5526e+05
+
+
+test1 =
+
+  2.5526e+05
+
+hetero: ii 4 basic_setsizeof2DreciprocalspaceImagesfromImagestack
+hetero: ii 5 basic_set2Drealspacesamplingintervals deltachi(1) 4.7 deltachi(2) 4.7
+hetero: ii 6 basic_compute2Dreciprocalspaceproperties
+hetero: ii 7 vobj_read_virusobj fn_clnp step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.clnp.txt fn_nu step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.nu.txt fn_q step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.q.txt
+hetero: ii 7 vobj_read_virusobj fn_clnp step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.clnp.txt fn_nu step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.nu.txt fn_q step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.q.txt
+virusobj_read: eta 1, R1 -1, R2 197.4
+rd_nu: nu has zero length.  Therefore will solve a homogeneous problem.
+virusobj_read: eta 2, R1 -1, R2 170
+rd_nu: nu has zero length.  Therefore will solve a homogeneous problem.
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj:
+hetero: ii 8 homo2hetero:
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj eta 1 action 1
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj eta 2 action 1
+virusobj_change_homo2hetero: eta 1: make heterogeneous
+virusobj_change_homo2hetero: eta 2: make heterogeneous
+hetero: ii 9 vobj_print_virusobj
+vobj_print_virusobj: eta 1 clnp_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.clnp.txt nu_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.nu.txt q_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.q.txt
+vobj_print_virusobj: eta 1 clnp.il:
+  Columns 1 through 14
+
+     0     0     0     0     0     6     6     6     6     6    10    10    10    10
+
+  Column 15
+
+    10
+
+vobj_print_virusobj: eta 1 clnp.in:
+  Columns 1 through 14
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Column 15
+
+     0
+
+vobj_print_virusobj: eta 1 clnp.ip:
+  Columns 1 through 14
+
+     1     2     3     4     5     1     2     3     4     5     1     2     3     4
+
+  Column 15
+
+     5
+
+vobj_print_virusobj: eta 1 clnp.optflag:
+  Columns 1 through 14
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Column 15
+
+     1
+
+vobj_print_virusobj: eta 1 clnp.c:
+  Columns 1 through 8
+
+ -107.6710  -33.4717    0.9476   14.7346   22.7187  -11.8062  -14.9936   -3.2540
+
+  Columns 9 through 15
+
+    4.7751    3.9206   12.7192    2.3094   -1.8897   -2.4752   -3.4167
+
+vobj_print_virusobj: eta 1 cbar:
+  Columns 1 through 8
+
+ -107.6710  -33.4717    0.9476   14.7346   22.7187  -11.8062  -14.9936   -3.2540
+
+  Columns 9 through 15
+
+    4.7751    3.9206   12.7192    2.3094   -1.8897   -2.4752   -3.4167
+
+vobj_print_virusobj: eta 1 BasisFunctionType 1
+vobj_print_virusobj: eta 1 R1 -1 R2 197.4
+vobj_print_virusobj: eta 1 nu:
+  Columns 1 through 8
+
+    4.6372    0.4481    0.0725    0.0868    0.2065    0.0725    0.0899    0.0725
+
+  Columns 9 through 15
+
+    0.0725    0.0725    0.0725    0.0725    0.0725    0.0725    0.0725
+
+vobj_print_virusobj: eta 1 q 0.568
+vobj_print_virusobj: eta 2 clnp_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.clnp.txt nu_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.nu.txt q_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.q.txt
+vobj_print_virusobj: eta 2 clnp.il:
+  Columns 1 through 14
+
+     0     0     0     0     0     6     6     6     6     6    10    10    10    10
+
+  Column 15
+
+    10
+
+vobj_print_virusobj: eta 2 clnp.in:
+  Columns 1 through 14
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Column 15
+
+     0
+
+vobj_print_virusobj: eta 2 clnp.ip:
+  Columns 1 through 14
+
+     1     2     3     4     5     1     2     3     4     5     1     2     3     4
+
+  Column 15
+
+     5
+
+vobj_print_virusobj: eta 2 clnp.optflag:
+  Columns 1 through 14
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Column 15
+
+     1
+
+vobj_print_virusobj: eta 2 clnp.c:
+  Columns 1 through 8
+
+ -103.7730  -33.3143   -1.0873   14.0521   23.7669    9.2062    7.7516    3.0300
+
+  Columns 9 through 15
+
+   -2.3581   -1.6140    7.6865    3.1821   -0.9742   -3.2610   -2.1209
+
+vobj_print_virusobj: eta 2 cbar:
+  Columns 1 through 8
+
+ -103.7730  -33.3143   -1.0873   14.0521   23.7669    9.2062    7.7516    3.0300
+
+  Columns 9 through 15
+
+   -2.3581   -1.6140    7.6865    3.1821   -0.9742   -3.2610   -2.1209
+
+vobj_print_virusobj: eta 2 BasisFunctionType 1
+vobj_print_virusobj: eta 2 R1 -1 R2 170
+vobj_print_virusobj: eta 2 nu:
+  Columns 1 through 8
+
+    4.3075    0.4439    0.0673    0.0790    0.2259    0.0673    0.0673    0.0673
+
+  Columns 9 through 15
+
+    0.0673    0.0673    0.0673    0.0673    0.0673    0.0673    0.0673
+
+vobj_print_virusobj: eta 2 q 0.432
+hetero: ii 10 misc_diary fn_diary off
+hetero: ii 2 box_readpixelnoisevar fn_pixelnoisevar step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.pixelnoisevar.txt
+hetero: ii 2 box_readpixelnoisevar pixelnoisevar 1.4237e+06
+hetero: ii 3 box_readImagestack: Imagestackformat mrc fn_Imagestack FHV.out.lmax10pmax5.Neta2.rule49.Nv500.pre4hetero.inv.Imagestack.mrc
+hetero: ii 3 box_readImagestack: mrc: startSlice 1 numSlices 500
+
+test1 =
+
+  2.5526e+05
+
+
+test1 =
+
+  2.5526e+05
+
+hetero: ii 4 basic_setsizeof2DreciprocalspaceImagesfromImagestack
+hetero: ii 5 basic_set2Drealspacesamplingintervals deltachi(1) 4.7 deltachi(2) 4.7
+hetero: ii 6 basic_compute2Dreciprocalspaceproperties
+hetero: ii 7 vobj_read_virusobj fn_clnp step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.clnp.txt fn_nu step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.nu.txt fn_q step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.q.txt
+hetero: ii 7 vobj_read_virusobj fn_clnp step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.clnp.txt fn_nu step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.nu.txt fn_q step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.q.txt
+virusobj_read: eta 1, R1 -1, R2 197.4
+rd_nu: nu has zero length.  Therefore will solve a homogeneous problem.
+virusobj_read: eta 2, R1 -1, R2 170
+rd_nu: nu has zero length.  Therefore will solve a homogeneous problem.
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj:
+hetero: ii 8 homo2hetero:
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj eta 1 action 1
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj eta 2 action 1
+virusobj_change_homo2hetero: eta 1: make heterogeneous
+virusobj_change_homo2hetero: eta 2: make heterogeneous
+hetero: ii 9 vobj_print_virusobj
+vobj_print_virusobj: eta 1 clnp_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.clnp.txt nu_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.nu.txt q_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.q.txt
+vobj_print_virusobj: eta 1 clnp.il:
+  Columns 1 through 14
+
+     0     0     0     0     0     6     6     6     6     6    10    10    10    10
+
+  Column 15
+
+    10
+
+vobj_print_virusobj: eta 1 clnp.in:
+  Columns 1 through 14
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Column 15
+
+     0
+
+vobj_print_virusobj: eta 1 clnp.ip:
+  Columns 1 through 14
+
+     1     2     3     4     5     1     2     3     4     5     1     2     3     4
+
+  Column 15
+
+     5
+
+vobj_print_virusobj: eta 1 clnp.optflag:
+  Columns 1 through 14
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Column 15
+
+     1
+
+vobj_print_virusobj: eta 1 clnp.c:
+  Columns 1 through 8
+
+ -107.6710  -33.4717    0.9476   14.7346   22.7187  -11.8062  -14.9936   -3.2540
+
+  Columns 9 through 15
+
+    4.7751    3.9206   12.7192    2.3094   -1.8897   -2.4752   -3.4167
+
+vobj_print_virusobj: eta 1 cbar:
+  Columns 1 through 8
+
+ -107.6710  -33.4717    0.9476   14.7346   22.7187  -11.8062  -14.9936   -3.2540
+
+  Columns 9 through 15
+
+    4.7751    3.9206   12.7192    2.3094   -1.8897   -2.4752   -3.4167
+
+vobj_print_virusobj: eta 1 BasisFunctionType 1
+vobj_print_virusobj: eta 1 R1 -1 R2 197.4
+vobj_print_virusobj: eta 1 nu:
+  Columns 1 through 8
+
+    4.6372    0.4481    0.0725    0.0868    0.2065    0.0725    0.0899    0.0725
+
+  Columns 9 through 15
+
+    0.0725    0.0725    0.0725    0.0725    0.0725    0.0725    0.0725
+
+vobj_print_virusobj: eta 1 q 0.568
+vobj_print_virusobj: eta 2 clnp_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.clnp.txt nu_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.nu.txt q_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.q.txt
+vobj_print_virusobj: eta 2 clnp.il:
+  Columns 1 through 14
+
+     0     0     0     0     0     6     6     6     6     6    10    10    10    10
+
+  Column 15
+
+    10
+
+vobj_print_virusobj: eta 2 clnp.in:
+  Columns 1 through 14
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Column 15
+
+     0
+
+vobj_print_virusobj: eta 2 clnp.ip:
+  Columns 1 through 14
+
+     1     2     3     4     5     1     2     3     4     5     1     2     3     4
+
+  Column 15
+
+     5
+
+vobj_print_virusobj: eta 2 clnp.optflag:
+  Columns 1 through 14
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Column 15
+
+     1
+
+vobj_print_virusobj: eta 2 clnp.c:
+  Columns 1 through 8
+
+ -103.7730  -33.3143   -1.0873   14.0521   23.7669    9.2062    7.7516    3.0300
+
+  Columns 9 through 15
+
+   -2.3581   -1.6140    7.6865    3.1821   -0.9742   -3.2610   -2.1209
+
+vobj_print_virusobj: eta 2 cbar:
+  Columns 1 through 8
+
+ -103.7730  -33.3143   -1.0873   14.0521   23.7669    9.2062    7.7516    3.0300
+
+  Columns 9 through 15
+
+   -2.3581   -1.6140    7.6865    3.1821   -0.9742   -3.2610   -2.1209
+
+vobj_print_virusobj: eta 2 BasisFunctionType 1
+vobj_print_virusobj: eta 2 R1 -1 R2 170
+vobj_print_virusobj: eta 2 nu:
+  Columns 1 through 8
+
+    4.3075    0.4439    0.0673    0.0790    0.2259    0.0673    0.0673    0.0673
+
+  Columns 9 through 15
+
+    0.0673    0.0673    0.0673    0.0673    0.0673    0.0673    0.0673
+
+vobj_print_virusobj: eta 2 q 0.432
+hetero: ii 10 misc_diary fn_diary off
+hetero: ii 2 box_readpixelnoisevar fn_pixelnoisevar step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.pixelnoisevar.txt
+hetero: ii 2 box_readpixelnoisevar pixelnoisevar 1.4237e+06
+hetero: ii 3 box_readImagestack: Imagestackformat mrc fn_Imagestack FHV.out.lmax10pmax5.Neta2.rule49.Nv500.pre4hetero.inv.Imagestack.mrc
+hetero: ii 3 box_readImagestack: mrc: startSlice 1 numSlices 500
+
+test1 =
+
+  2.5526e+05
+
+
+test1 =
+
+  2.5526e+05
+
+hetero: ii 4 basic_setsizeof2DreciprocalspaceImagesfromImagestack
+hetero: ii 5 basic_set2Drealspacesamplingintervals deltachi(1) 4.7 deltachi(2) 4.7
+hetero: ii 6 basic_compute2Dreciprocalspaceproperties
+hetero: ii 7 vobj_read_virusobj fn_clnp step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.clnp.txt fn_nu step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.nu.txt fn_q step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.q.txt
+hetero: ii 7 vobj_read_virusobj fn_clnp step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.clnp.txt fn_nu step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.nu.txt fn_q step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.q.txt
+virusobj_read: eta 1, R1 -1, R2 197.4
+rd_nu: nu has zero length.  Therefore will solve a homogeneous problem.
+virusobj_read: eta 2, R1 -1, R2 170
+rd_nu: nu has zero length.  Therefore will solve a homogeneous problem.
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj:
+hetero: ii 8 homo2hetero:
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj eta 1 action 1
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj eta 2 action 1
+virusobj_change_homo2hetero: eta 1: make heterogeneous
+virusobj_change_homo2hetero: eta 2: make heterogeneous
+hetero: ii 9 vobj_print_virusobj
+vobj_print_virusobj: eta 1 clnp_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.clnp.txt nu_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.nu.txt q_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.q.txt
+vobj_print_virusobj: eta 1 clnp.il:
+  Columns 1 through 14
+
+     0     0     0     0     0     6     6     6     6     6    10    10    10    10
+
+  Column 15
+
+    10
+
+vobj_print_virusobj: eta 1 clnp.in:
+  Columns 1 through 14
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Column 15
+
+     0
+
+vobj_print_virusobj: eta 1 clnp.ip:
+  Columns 1 through 14
+
+     1     2     3     4     5     1     2     3     4     5     1     2     3     4
+
+  Column 15
+
+     5
+
+vobj_print_virusobj: eta 1 clnp.optflag:
+  Columns 1 through 14
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Column 15
+
+     1
+
+vobj_print_virusobj: eta 1 clnp.c:
+  Columns 1 through 8
+
+ -107.6710  -33.4717    0.9476   14.7346   22.7187  -11.8062  -14.9936   -3.2540
+
+  Columns 9 through 15
+
+    4.7751    3.9206   12.7192    2.3094   -1.8897   -2.4752   -3.4167
+
+vobj_print_virusobj: eta 1 cbar:
+  Columns 1 through 8
+
+ -107.6710  -33.4717    0.9476   14.7346   22.7187  -11.8062  -14.9936   -3.2540
+
+  Columns 9 through 15
+
+    4.7751    3.9206   12.7192    2.3094   -1.8897   -2.4752   -3.4167
+
+vobj_print_virusobj: eta 1 BasisFunctionType 1
+vobj_print_virusobj: eta 1 R1 -1 R2 197.4
+vobj_print_virusobj: eta 1 nu:
+  Columns 1 through 8
+
+    4.6372    0.4481    0.0725    0.0868    0.2065    0.0725    0.0899    0.0725
+
+  Columns 9 through 15
+
+    0.0725    0.0725    0.0725    0.0725    0.0725    0.0725    0.0725
+
+vobj_print_virusobj: eta 1 q 0.568
+vobj_print_virusobj: eta 2 clnp_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.clnp.txt nu_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.nu.txt q_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.q.txt
+vobj_print_virusobj: eta 2 clnp.il:
+  Columns 1 through 14
+
+     0     0     0     0     0     6     6     6     6     6    10    10    10    10
+
+  Column 15
+
+    10
+
+vobj_print_virusobj: eta 2 clnp.in:
+  Columns 1 through 14
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Column 15
+
+     0
+
+vobj_print_virusobj: eta 2 clnp.ip:
+  Columns 1 through 14
+
+     1     2     3     4     5     1     2     3     4     5     1     2     3     4
+
+  Column 15
+
+     5
+
+vobj_print_virusobj: eta 2 clnp.optflag:
+  Columns 1 through 14
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Column 15
+
+     1
+
+vobj_print_virusobj: eta 2 clnp.c:
+  Columns 1 through 8
+
+ -103.7730  -33.3143   -1.0873   14.0521   23.7669    9.2062    7.7516    3.0300
+
+  Columns 9 through 15
+
+   -2.3581   -1.6140    7.6865    3.1821   -0.9742   -3.2610   -2.1209
+
+vobj_print_virusobj: eta 2 cbar:
+  Columns 1 through 8
+
+ -103.7730  -33.3143   -1.0873   14.0521   23.7669    9.2062    7.7516    3.0300
+
+  Columns 9 through 15
+
+   -2.3581   -1.6140    7.6865    3.1821   -0.9742   -3.2610   -2.1209
+
+vobj_print_virusobj: eta 2 BasisFunctionType 1
+vobj_print_virusobj: eta 2 R1 -1 R2 170
+vobj_print_virusobj: eta 2 nu:
+  Columns 1 through 8
+
+    4.3075    0.4439    0.0673    0.0790    0.2259    0.0673    0.0673    0.0673
+
+  Columns 9 through 15
+
+    0.0673    0.0673    0.0673    0.0673    0.0673    0.0673    0.0673
+
+vobj_print_virusobj: eta 2 q 0.432
+hetero: ii 10 misc_diary fn_diary off
+hetero: ii 2 box_readpixelnoisevar fn_pixelnoisevar step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.pixelnoisevar.txt
+hetero: ii 2 box_readpixelnoisevar pixelnoisevar 1.4237e+06
+hetero: ii 3 box_readImagestack: Imagestackformat mrc fn_Imagestack FHV.out.lmax10pmax5.Neta2.rule49.Nv500.pre4hetero.inv.Imagestack.mrc
+hetero: ii 3 box_readImagestack: mrc: startSlice 1 numSlices 500
+
+test1 =
+
+  2.5526e+05
+
+
+test1 =
+
+  2.5526e+05
+
+hetero: ii 4 basic_setsizeof2DreciprocalspaceImagesfromImagestack
+hetero: ii 5 basic_set2Drealspacesamplingintervals deltachi(1) 4.7 deltachi(2) 4.7
+hetero: ii 6 basic_compute2Dreciprocalspaceproperties
+hetero: ii 7 vobj_read_virusobj fn_clnp step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.clnp.txt fn_nu step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.nu.txt fn_q step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.q.txt
+hetero: ii 7 vobj_read_virusobj fn_clnp step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.clnp.txt fn_nu step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.nu.txt fn_q step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.q.txt
+virusobj_read: eta 1, R1 -1, R2 197.4
+rd_nu: nu has zero length.  Therefore will solve a homogeneous problem.
+virusobj_read: eta 2, R1 -1, R2 170
+rd_nu: nu has zero length.  Therefore will solve a homogeneous problem.
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj:
+hetero: ii 8 homo2hetero:
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj eta 1 action 1
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj eta 2 action 1
+virusobj_change_homo2hetero: eta 1: make heterogeneous
+virusobj_change_homo2hetero: eta 2: make heterogeneous
+hetero: ii 9 vobj_print_virusobj
+vobj_print_virusobj: eta 1 clnp_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.clnp.txt nu_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.nu.txt q_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.q.txt
+vobj_print_virusobj: eta 1 clnp.il:
+  Columns 1 through 14
+
+     0     0     0     0     0     6     6     6     6     6    10    10    10    10
+
+  Column 15
+
+    10
+
+vobj_print_virusobj: eta 1 clnp.in:
+  Columns 1 through 14
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Column 15
+
+     0
+
+vobj_print_virusobj: eta 1 clnp.ip:
+  Columns 1 through 14
+
+     1     2     3     4     5     1     2     3     4     5     1     2     3     4
+
+  Column 15
+
+     5
+
+vobj_print_virusobj: eta 1 clnp.optflag:
+  Columns 1 through 14
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Column 15
+
+     1
+
+vobj_print_virusobj: eta 1 clnp.c:
+  Columns 1 through 8
+
+ -107.6710  -33.4717    0.9476   14.7346   22.7187  -11.8062  -14.9936   -3.2540
+
+  Columns 9 through 15
+
+    4.7751    3.9206   12.7192    2.3094   -1.8897   -2.4752   -3.4167
+
+vobj_print_virusobj: eta 1 cbar:
+  Columns 1 through 8
+
+ -107.6710  -33.4717    0.9476   14.7346   22.7187  -11.8062  -14.9936   -3.2540
+
+  Columns 9 through 15
+
+    4.7751    3.9206   12.7192    2.3094   -1.8897   -2.4752   -3.4167
+
+vobj_print_virusobj: eta 1 BasisFunctionType 1
+vobj_print_virusobj: eta 1 R1 -1 R2 197.4
+vobj_print_virusobj: eta 1 nu:
+  Columns 1 through 8
+
+    4.6372    0.4481    0.0725    0.0868    0.2065    0.0725    0.0899    0.0725
+
+  Columns 9 through 15
+
+    0.0725    0.0725    0.0725    0.0725    0.0725    0.0725    0.0725
+
+vobj_print_virusobj: eta 1 q 0.568
+vobj_print_virusobj: eta 2 clnp_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.clnp.txt nu_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.nu.txt q_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.q.txt
+vobj_print_virusobj: eta 2 clnp.il:
+  Columns 1 through 14
+
+     0     0     0     0     0     6     6     6     6     6    10    10    10    10
+
+  Column 15
+
+    10
+
+vobj_print_virusobj: eta 2 clnp.in:
+  Columns 1 through 14
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Column 15
+
+     0
+
+vobj_print_virusobj: eta 2 clnp.ip:
+  Columns 1 through 14
+
+     1     2     3     4     5     1     2     3     4     5     1     2     3     4
+
+  Column 15
+
+     5
+
+vobj_print_virusobj: eta 2 clnp.optflag:
+  Columns 1 through 14
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Column 15
+
+     1
+
+vobj_print_virusobj: eta 2 clnp.c:
+  Columns 1 through 8
+
+ -103.7730  -33.3143   -1.0873   14.0521   23.7669    9.2062    7.7516    3.0300
+
+  Columns 9 through 15
+
+   -2.3581   -1.6140    7.6865    3.1821   -0.9742   -3.2610   -2.1209
+
+vobj_print_virusobj: eta 2 cbar:
+  Columns 1 through 8
+
+ -103.7730  -33.3143   -1.0873   14.0521   23.7669    9.2062    7.7516    3.0300
+
+  Columns 9 through 15
+
+   -2.3581   -1.6140    7.6865    3.1821   -0.9742   -3.2610   -2.1209
+
+vobj_print_virusobj: eta 2 BasisFunctionType 1
+vobj_print_virusobj: eta 2 R1 -1 R2 170
+vobj_print_virusobj: eta 2 nu:
+  Columns 1 through 8
+
+    4.3075    0.4439    0.0673    0.0790    0.2259    0.0673    0.0673    0.0673
+
+  Columns 9 through 15
+
+    0.0673    0.0673    0.0673    0.0673    0.0673    0.0673    0.0673
+
+vobj_print_virusobj: eta 2 q 0.432
+hetero: ii 10 misc_diary fn_diary off
+hetero: ii 2 box_readpixelnoisevar fn_pixelnoisevar step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.pixelnoisevar.txt
+hetero: ii 2 box_readpixelnoisevar pixelnoisevar 1.4237e+06
+hetero: ii 3 box_readImagestack: Imagestackformat mrc fn_Imagestack FHV.out.lmax10pmax5.Neta2.rule49.Nv500.pre4hetero.inv.Imagestack.mrc
+hetero: ii 3 box_readImagestack: mrc: startSlice 1 numSlices 500
+
+test1 =
+
+  2.5526e+05
+
+
+test1 =
+
+  2.5526e+05
+
+hetero: ii 4 basic_setsizeof2DreciprocalspaceImagesfromImagestack
+hetero: ii 5 basic_set2Drealspacesamplingintervals deltachi(1) 4.7 deltachi(2) 4.7
+hetero: ii 6 basic_compute2Dreciprocalspaceproperties
+hetero: ii 7 vobj_read_virusobj fn_clnp step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.clnp.txt fn_nu step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.nu.txt fn_q step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.q.txt
+hetero: ii 7 vobj_read_virusobj fn_clnp step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.clnp.txt fn_nu step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.nu.txt fn_q step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.q.txt
+virusobj_read: eta 1, R1 -1, R2 197.4
+rd_nu: nu has zero length.  Therefore will solve a homogeneous problem.
+virusobj_read: eta 2, R1 -1, R2 170
+rd_nu: nu has zero length.  Therefore will solve a homogeneous problem.
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj:
+hetero: ii 8 homo2hetero:
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj eta 1 action 1
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj eta 2 action 1
+virusobj_change_homo2hetero: eta 1: make heterogeneous
+virusobj_change_homo2hetero: eta 2: make heterogeneous
+hetero: ii 9 vobj_print_virusobj
+vobj_print_virusobj: eta 1 clnp_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.clnp.txt nu_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.nu.txt q_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.q.txt
+vobj_print_virusobj: eta 1 clnp.il:
+  Columns 1 through 14
+
+     0     0     0     0     0     6     6     6     6     6    10    10    10    10
+
+  Column 15
+
+    10
+
+vobj_print_virusobj: eta 1 clnp.in:
+  Columns 1 through 14
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Column 15
+
+     0
+
+vobj_print_virusobj: eta 1 clnp.ip:
+  Columns 1 through 14
+
+     1     2     3     4     5     1     2     3     4     5     1     2     3     4
+
+  Column 15
+
+     5
+
+vobj_print_virusobj: eta 1 clnp.optflag:
+  Columns 1 through 14
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Column 15
+
+     1
+
+vobj_print_virusobj: eta 1 clnp.c:
+  Columns 1 through 8
+
+ -107.6710  -33.4717    0.9476   14.7346   22.7187  -11.8062  -14.9936   -3.2540
+
+  Columns 9 through 15
+
+    4.7751    3.9206   12.7192    2.3094   -1.8897   -2.4752   -3.4167
+
+vobj_print_virusobj: eta 1 cbar:
+  Columns 1 through 8
+
+ -107.6710  -33.4717    0.9476   14.7346   22.7187  -11.8062  -14.9936   -3.2540
+
+  Columns 9 through 15
+
+    4.7751    3.9206   12.7192    2.3094   -1.8897   -2.4752   -3.4167
+
+vobj_print_virusobj: eta 1 BasisFunctionType 1
+vobj_print_virusobj: eta 1 R1 -1 R2 197.4
+vobj_print_virusobj: eta 1 nu:
+  Columns 1 through 8
+
+    4.6372    0.4481    0.0725    0.0868    0.2065    0.0725    0.0899    0.0725
+
+  Columns 9 through 15
+
+    0.0725    0.0725    0.0725    0.0725    0.0725    0.0725    0.0725
+
+vobj_print_virusobj: eta 1 q 0.568
+vobj_print_virusobj: eta 2 clnp_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.clnp.txt nu_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.nu.txt q_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.q.txt
+vobj_print_virusobj: eta 2 clnp.il:
+  Columns 1 through 14
+
+     0     0     0     0     0     6     6     6     6     6    10    10    10    10
+
+  Column 15
+
+    10
+
+vobj_print_virusobj: eta 2 clnp.in:
+  Columns 1 through 14
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Column 15
+
+     0
+
+vobj_print_virusobj: eta 2 clnp.ip:
+  Columns 1 through 14
+
+     1     2     3     4     5     1     2     3     4     5     1     2     3     4
+
+  Column 15
+
+     5
+
+vobj_print_virusobj: eta 2 clnp.optflag:
+  Columns 1 through 14
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Column 15
+
+     1
+
+vobj_print_virusobj: eta 2 clnp.c:
+  Columns 1 through 8
+
+ -103.7730  -33.3143   -1.0873   14.0521   23.7669    9.2062    7.7516    3.0300
+
+  Columns 9 through 15
+
+   -2.3581   -1.6140    7.6865    3.1821   -0.9742   -3.2610   -2.1209
+
+vobj_print_virusobj: eta 2 cbar:
+  Columns 1 through 8
+
+ -103.7730  -33.3143   -1.0873   14.0521   23.7669    9.2062    7.7516    3.0300
+
+  Columns 9 through 15
+
+   -2.3581   -1.6140    7.6865    3.1821   -0.9742   -3.2610   -2.1209
+
+vobj_print_virusobj: eta 2 BasisFunctionType 1
+vobj_print_virusobj: eta 2 R1 -1 R2 170
+vobj_print_virusobj: eta 2 nu:
+  Columns 1 through 8
+
+    4.3075    0.4439    0.0673    0.0790    0.2259    0.0673    0.0673    0.0673
+
+  Columns 9 through 15
+
+    0.0673    0.0673    0.0673    0.0673    0.0673    0.0673    0.0673
+
+vobj_print_virusobj: eta 2 q 0.432
+hetero: ii 10 misc_diary fn_diary off
+hetero: ii 2 box_readpixelnoisevar fn_pixelnoisevar step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.pixelnoisevar.txt
+hetero: ii 2 box_readpixelnoisevar pixelnoisevar 1.4237e+06
+hetero: ii 3 box_readImagestack: Imagestackformat mrc fn_Imagestack FHV.out.lmax10pmax5.Neta2.rule49.Nv500.pre4hetero.inv.Imagestack.mrc
+hetero: ii 3 box_readImagestack: mrc: startSlice 1 numSlices 500
+
+test1 =
+
+  2.5526e+05
+
+
+test1 =
+
+  2.5526e+05
+
+hetero: ii 4 basic_setsizeof2DreciprocalspaceImagesfromImagestack
+hetero: ii 5 basic_set2Drealspacesamplingintervals deltachi(1) 4.7 deltachi(2) 4.7
+hetero: ii 6 basic_compute2Dreciprocalspaceproperties
+hetero: ii 7 vobj_read_virusobj fn_clnp step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.clnp.txt fn_nu step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.nu.txt fn_q step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.q.txt
+hetero: ii 7 vobj_read_virusobj fn_clnp step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.clnp.txt fn_nu step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.nu.txt fn_q step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.q.txt
+virusobj_read: eta 1, R1 -1, R2 197.4
+rd_nu: nu has zero length.  Therefore will solve a homogeneous problem.
+virusobj_read: eta 2, R1 -1, R2 170
+rd_nu: nu has zero length.  Therefore will solve a homogeneous problem.
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj:
+hetero: ii 8 homo2hetero:
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj eta 1 action 1
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj eta 2 action 1
+virusobj_change_homo2hetero: eta 1: make heterogeneous
+virusobj_change_homo2hetero: eta 2: make heterogeneous
+hetero: ii 9 vobj_print_virusobj
+vobj_print_virusobj: eta 1 clnp_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.clnp.txt nu_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.nu.txt q_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.q.txt
+vobj_print_virusobj: eta 1 clnp.il:
+  Columns 1 through 14
+
+     0     0     0     0     0     6     6     6     6     6    10    10    10    10
+
+  Column 15
+
+    10
+
+vobj_print_virusobj: eta 1 clnp.in:
+  Columns 1 through 14
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Column 15
+
+     0
+
+vobj_print_virusobj: eta 1 clnp.ip:
+  Columns 1 through 14
+
+     1     2     3     4     5     1     2     3     4     5     1     2     3     4
+
+  Column 15
+
+     5
+
+vobj_print_virusobj: eta 1 clnp.optflag:
+  Columns 1 through 14
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Column 15
+
+     1
+
+vobj_print_virusobj: eta 1 clnp.c:
+  Columns 1 through 8
+
+ -107.6710  -33.4717    0.9476   14.7346   22.7187  -11.8062  -14.9936   -3.2540
+
+  Columns 9 through 15
+
+    4.7751    3.9206   12.7192    2.3094   -1.8897   -2.4752   -3.4167
+
+vobj_print_virusobj: eta 1 cbar:
+  Columns 1 through 8
+
+ -107.6710  -33.4717    0.9476   14.7346   22.7187  -11.8062  -14.9936   -3.2540
+
+  Columns 9 through 15
+
+    4.7751    3.9206   12.7192    2.3094   -1.8897   -2.4752   -3.4167
+
+vobj_print_virusobj: eta 1 BasisFunctionType 1
+vobj_print_virusobj: eta 1 R1 -1 R2 197.4
+vobj_print_virusobj: eta 1 nu:
+  Columns 1 through 8
+
+    4.6372    0.4481    0.0725    0.0868    0.2065    0.0725    0.0899    0.0725
+
+  Columns 9 through 15
+
+    0.0725    0.0725    0.0725    0.0725    0.0725    0.0725    0.0725
+
+vobj_print_virusobj: eta 1 q 0.568
+vobj_print_virusobj: eta 2 clnp_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.clnp.txt nu_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.nu.txt q_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.q.txt
+vobj_print_virusobj: eta 2 clnp.il:
+  Columns 1 through 14
+
+     0     0     0     0     0     6     6     6     6     6    10    10    10    10
+
+  Column 15
+
+    10
+
+vobj_print_virusobj: eta 2 clnp.in:
+  Columns 1 through 14
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Column 15
+
+     0
+
+vobj_print_virusobj: eta 2 clnp.ip:
+  Columns 1 through 14
+
+     1     2     3     4     5     1     2     3     4     5     1     2     3     4
+
+  Column 15
+
+     5
+
+vobj_print_virusobj: eta 2 clnp.optflag:
+  Columns 1 through 14
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Column 15
+
+     1
+
+vobj_print_virusobj: eta 2 clnp.c:
+  Columns 1 through 8
+
+ -103.7730  -33.3143   -1.0873   14.0521   23.7669    9.2062    7.7516    3.0300
+
+  Columns 9 through 15
+
+   -2.3581   -1.6140    7.6865    3.1821   -0.9742   -3.2610   -2.1209
+
+vobj_print_virusobj: eta 2 cbar:
+  Columns 1 through 8
+
+ -103.7730  -33.3143   -1.0873   14.0521   23.7669    9.2062    7.7516    3.0300
+
+  Columns 9 through 15
+
+   -2.3581   -1.6140    7.6865    3.1821   -0.9742   -3.2610   -2.1209
+
+vobj_print_virusobj: eta 2 BasisFunctionType 1
+vobj_print_virusobj: eta 2 R1 -1 R2 170
+vobj_print_virusobj: eta 2 nu:
+  Columns 1 through 8
+
+    4.3075    0.4439    0.0673    0.0790    0.2259    0.0673    0.0673    0.0673
+
+  Columns 9 through 15
+
+    0.0673    0.0673    0.0673    0.0673    0.0673    0.0673    0.0673
+
+vobj_print_virusobj: eta 2 q 0.432
+hetero: ii 10 misc_diary fn_diary off
+hetero: ii 2 box_readpixelnoisevar fn_pixelnoisevar step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.pixelnoisevar.txt
+hetero: ii 2 box_readpixelnoisevar pixelnoisevar 1.4237e+06
+hetero: ii 3 box_readImagestack: Imagestackformat mrc fn_Imagestack FHV.out.lmax10pmax5.Neta2.rule49.Nv500.pre4hetero.inv.Imagestack.mrc
+hetero: ii 3 box_readImagestack: mrc: startSlice 1 numSlices 500
+
+test1 =
+
+  2.5526e+05
+
+
+test1 =
+
+  2.5526e+05
+
+hetero: ii 4 basic_setsizeof2DreciprocalspaceImagesfromImagestack
+hetero: ii 5 basic_set2Drealspacesamplingintervals deltachi(1) 4.7 deltachi(2) 4.7
+hetero: ii 6 basic_compute2Dreciprocalspaceproperties
+hetero: ii 7 vobj_read_virusobj fn_clnp step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.clnp.txt fn_nu step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.nu.txt fn_q step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.q.txt
+hetero: ii 7 vobj_read_virusobj fn_clnp step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.clnp.txt fn_nu step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.nu.txt fn_q step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.q.txt
+virusobj_read: eta 1, R1 -1, R2 197.4
+rd_nu: nu has zero length.  Therefore will solve a homogeneous problem.
+virusobj_read: eta 2, R1 -1, R2 170
+rd_nu: nu has zero length.  Therefore will solve a homogeneous problem.
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj:
+hetero: ii 8 homo2hetero:
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj eta 1 action 1
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj eta 2 action 1
+virusobj_change_homo2hetero: eta 1: make heterogeneous
+virusobj_change_homo2hetero: eta 2: make heterogeneous
+hetero: ii 9 vobj_print_virusobj
+vobj_print_virusobj: eta 1 clnp_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.clnp.txt nu_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.nu.txt q_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.q.txt
+vobj_print_virusobj: eta 1 clnp.il:
+  Columns 1 through 14
+
+     0     0     0     0     0     6     6     6     6     6    10    10    10    10
+
+  Column 15
+
+    10
+
+vobj_print_virusobj: eta 1 clnp.in:
+  Columns 1 through 14
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Column 15
+
+     0
+
+vobj_print_virusobj: eta 1 clnp.ip:
+  Columns 1 through 14
+
+     1     2     3     4     5     1     2     3     4     5     1     2     3     4
+
+  Column 15
+
+     5
+
+vobj_print_virusobj: eta 1 clnp.optflag:
+  Columns 1 through 14
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Column 15
+
+     1
+
+vobj_print_virusobj: eta 1 clnp.c:
+  Columns 1 through 8
+
+ -107.6710  -33.4717    0.9476   14.7346   22.7187  -11.8062  -14.9936   -3.2540
+
+  Columns 9 through 15
+
+    4.7751    3.9206   12.7192    2.3094   -1.8897   -2.4752   -3.4167
+
+vobj_print_virusobj: eta 1 cbar:
+  Columns 1 through 8
+
+ -107.6710  -33.4717    0.9476   14.7346   22.7187  -11.8062  -14.9936   -3.2540
+
+  Columns 9 through 15
+
+    4.7751    3.9206   12.7192    2.3094   -1.8897   -2.4752   -3.4167
+
+vobj_print_virusobj: eta 1 BasisFunctionType 1
+vobj_print_virusobj: eta 1 R1 -1 R2 197.4
+vobj_print_virusobj: eta 1 nu:
+  Columns 1 through 8
+
+    4.6372    0.4481    0.0725    0.0868    0.2065    0.0725    0.0899    0.0725
+
+  Columns 9 through 15
+
+    0.0725    0.0725    0.0725    0.0725    0.0725    0.0725    0.0725
+
+vobj_print_virusobj: eta 1 q 0.568
+vobj_print_virusobj: eta 2 clnp_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.clnp.txt nu_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.nu.txt q_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.q.txt
+vobj_print_virusobj: eta 2 clnp.il:
+  Columns 1 through 14
+
+     0     0     0     0     0     6     6     6     6     6    10    10    10    10
+
+  Column 15
+
+    10
+
+vobj_print_virusobj: eta 2 clnp.in:
+  Columns 1 through 14
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Column 15
+
+     0
+
+vobj_print_virusobj: eta 2 clnp.ip:
+  Columns 1 through 14
+
+     1     2     3     4     5     1     2     3     4     5     1     2     3     4
+
+  Column 15
+
+     5
+
+vobj_print_virusobj: eta 2 clnp.optflag:
+  Columns 1 through 14
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Column 15
+
+     1
+
+vobj_print_virusobj: eta 2 clnp.c:
+  Columns 1 through 8
+
+ -103.7730  -33.3143   -1.0873   14.0521   23.7669    9.2062    7.7516    3.0300
+
+  Columns 9 through 15
+
+   -2.3581   -1.6140    7.6865    3.1821   -0.9742   -3.2610   -2.1209
+
+vobj_print_virusobj: eta 2 cbar:
+  Columns 1 through 8
+
+ -103.7730  -33.3143   -1.0873   14.0521   23.7669    9.2062    7.7516    3.0300
+
+  Columns 9 through 15
+
+   -2.3581   -1.6140    7.6865    3.1821   -0.9742   -3.2610   -2.1209
+
+vobj_print_virusobj: eta 2 BasisFunctionType 1
+vobj_print_virusobj: eta 2 R1 -1 R2 170
+vobj_print_virusobj: eta 2 nu:
+  Columns 1 through 8
+
+    4.3075    0.4439    0.0673    0.0790    0.2259    0.0673    0.0673    0.0673
+
+  Columns 9 through 15
+
+    0.0673    0.0673    0.0673    0.0673    0.0673    0.0673    0.0673
+
+vobj_print_virusobj: eta 2 q 0.432
+hetero: ii 10 misc_diary fn_diary off
+hetero: ii 2 box_readpixelnoisevar fn_pixelnoisevar step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.pixelnoisevar.txt
+hetero: ii 2 box_readpixelnoisevar pixelnoisevar 1.4237e+06
+hetero: ii 3 box_readImagestack: Imagestackformat mrc fn_Imagestack FHV.out.lmax10pmax5.Neta2.rule49.Nv500.pre4hetero.inv.Imagestack.mrc
+hetero: ii 3 box_readImagestack: mrc: startSlice 1 numSlices 500
+
+test1 =
+
+  2.5526e+05
+
+
+test1 =
+
+  2.5526e+05
+
+hetero: ii 4 basic_setsizeof2DreciprocalspaceImagesfromImagestack
+hetero: ii 5 basic_set2Drealspacesamplingintervals deltachi(1) 4.7 deltachi(2) 4.7
+hetero: ii 6 basic_compute2Dreciprocalspaceproperties
+hetero: ii 7 vobj_read_virusobj fn_clnp step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.clnp.txt fn_nu step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.nu.txt fn_q step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.q.txt
+hetero: ii 7 vobj_read_virusobj fn_clnp step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.clnp.txt fn_nu step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.nu.txt fn_q step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.q.txt
+virusobj_read: eta 1, R1 -1, R2 197.4
+rd_nu: nu has zero length.  Therefore will solve a homogeneous problem.
+virusobj_read: eta 2, R1 -1, R2 170
+rd_nu: nu has zero length.  Therefore will solve a homogeneous problem.
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj:
+hetero: ii 8 homo2hetero:
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj eta 1 action 1
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj eta 2 action 1
+virusobj_change_homo2hetero: eta 1: make heterogeneous
+virusobj_change_homo2hetero: eta 2: make heterogeneous
+hetero: ii 9 vobj_print_virusobj
+vobj_print_virusobj: eta 1 clnp_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.clnp.txt nu_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.nu.txt q_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.q.txt
+vobj_print_virusobj: eta 1 clnp.il:
+  Columns 1 through 14
+
+     0     0     0     0     0     6     6     6     6     6    10    10    10    10
+
+  Column 15
+
+    10
+
+vobj_print_virusobj: eta 1 clnp.in:
+  Columns 1 through 14
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Column 15
+
+     0
+
+vobj_print_virusobj: eta 1 clnp.ip:
+  Columns 1 through 14
+
+     1     2     3     4     5     1     2     3     4     5     1     2     3     4
+
+  Column 15
+
+     5
+
+vobj_print_virusobj: eta 1 clnp.optflag:
+  Columns 1 through 14
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Column 15
+
+     1
+
+vobj_print_virusobj: eta 1 clnp.c:
+  Columns 1 through 8
+
+ -107.6710  -33.4717    0.9476   14.7346   22.7187  -11.8062  -14.9936   -3.2540
+
+  Columns 9 through 15
+
+    4.7751    3.9206   12.7192    2.3094   -1.8897   -2.4752   -3.4167
+
+vobj_print_virusobj: eta 1 cbar:
+  Columns 1 through 8
+
+ -107.6710  -33.4717    0.9476   14.7346   22.7187  -11.8062  -14.9936   -3.2540
+
+  Columns 9 through 15
+
+    4.7751    3.9206   12.7192    2.3094   -1.8897   -2.4752   -3.4167
+
+vobj_print_virusobj: eta 1 BasisFunctionType 1
+vobj_print_virusobj: eta 1 R1 -1 R2 197.4
+vobj_print_virusobj: eta 1 nu:
+  Columns 1 through 8
+
+    4.6372    0.4481    0.0725    0.0868    0.2065    0.0725    0.0899    0.0725
+
+  Columns 9 through 15
+
+    0.0725    0.0725    0.0725    0.0725    0.0725    0.0725    0.0725
+
+vobj_print_virusobj: eta 1 q 0.568
+vobj_print_virusobj: eta 2 clnp_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.clnp.txt nu_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.nu.txt q_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.q.txt
+vobj_print_virusobj: eta 2 clnp.il:
+  Columns 1 through 14
+
+     0     0     0     0     0     6     6     6     6     6    10    10    10    10
+
+  Column 15
+
+    10
+
+vobj_print_virusobj: eta 2 clnp.in:
+  Columns 1 through 14
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Column 15
+
+     0
+
+vobj_print_virusobj: eta 2 clnp.ip:
+  Columns 1 through 14
+
+     1     2     3     4     5     1     2     3     4     5     1     2     3     4
+
+  Column 15
+
+     5
+
+vobj_print_virusobj: eta 2 clnp.optflag:
+  Columns 1 through 14
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Column 15
+
+     1
+
+vobj_print_virusobj: eta 2 clnp.c:
+  Columns 1 through 8
+
+ -103.7730  -33.3143   -1.0873   14.0521   23.7669    9.2062    7.7516    3.0300
+
+  Columns 9 through 15
+
+   -2.3581   -1.6140    7.6865    3.1821   -0.9742   -3.2610   -2.1209
+
+vobj_print_virusobj: eta 2 cbar:
+  Columns 1 through 8
+
+ -103.7730  -33.3143   -1.0873   14.0521   23.7669    9.2062    7.7516    3.0300
+
+  Columns 9 through 15
+
+   -2.3581   -1.6140    7.6865    3.1821   -0.9742   -3.2610   -2.1209
+
+vobj_print_virusobj: eta 2 BasisFunctionType 1
+vobj_print_virusobj: eta 2 R1 -1 R2 170
+vobj_print_virusobj: eta 2 nu:
+  Columns 1 through 8
+
+    4.3075    0.4439    0.0673    0.0790    0.2259    0.0673    0.0673    0.0673
+
+  Columns 9 through 15
+
+    0.0673    0.0673    0.0673    0.0673    0.0673    0.0673    0.0673
+
+vobj_print_virusobj: eta 2 q 0.432
+hetero: ii 10 misc_diary fn_diary off
+hetero: ii 2 box_readpixelnoisevar fn_pixelnoisevar step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.pixelnoisevar.txt
+hetero: ii 2 box_readpixelnoisevar pixelnoisevar 1.4237e+06
+hetero: ii 3 box_readImagestack: Imagestackformat mrc fn_Imagestack FHV.out.lmax10pmax5.Neta2.rule49.Nv500.pre4hetero.inv.Imagestack.mrc
+hetero: ii 3 box_readImagestack: mrc: startSlice 1 numSlices 500
+
+test1 =
+
+  2.5526e+05
+
+
+test1 =
+
+  2.5526e+05
+
+hetero: ii 4 basic_setsizeof2DreciprocalspaceImagesfromImagestack
+hetero: ii 5 basic_set2Drealspacesamplingintervals deltachi(1) 4.7 deltachi(2) 4.7
+hetero: ii 6 basic_compute2Dreciprocalspaceproperties
+hetero: ii 7 vobj_read_virusobj fn_clnp step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.clnp.txt fn_nu step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.nu.txt fn_q step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.q.txt
+hetero: ii 7 vobj_read_virusobj fn_clnp step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.clnp.txt fn_nu step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.nu.txt fn_q step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.q.txt
+virusobj_read: eta 1, R1 -1, R2 197.4
+rd_nu: nu has zero length.  Therefore will solve a homogeneous problem.
+virusobj_read: eta 2, R1 -1, R2 170
+rd_nu: nu has zero length.  Therefore will solve a homogeneous problem.
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj:
+hetero: ii 8 homo2hetero:
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj eta 1 action 1
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj eta 2 action 1
+virusobj_change_homo2hetero: eta 1: make heterogeneous
+virusobj_change_homo2hetero: eta 2: make heterogeneous
+hetero: ii 9 vobj_print_virusobj
+vobj_print_virusobj: eta 1 clnp_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.clnp.txt nu_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.nu.txt q_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.q.txt
+vobj_print_virusobj: eta 1 clnp.il:
+  Columns 1 through 14
+
+     0     0     0     0     0     6     6     6     6     6    10    10    10    10
+
+  Column 15
+
+    10
+
+vobj_print_virusobj: eta 1 clnp.in:
+  Columns 1 through 14
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Column 15
+
+     0
+
+vobj_print_virusobj: eta 1 clnp.ip:
+  Columns 1 through 14
+
+     1     2     3     4     5     1     2     3     4     5     1     2     3     4
+
+  Column 15
+
+     5
+
+vobj_print_virusobj: eta 1 clnp.optflag:
+  Columns 1 through 14
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Column 15
+
+     1
+
+vobj_print_virusobj: eta 1 clnp.c:
+  Columns 1 through 8
+
+ -107.6710  -33.4717    0.9476   14.7346   22.7187  -11.8062  -14.9936   -3.2540
+
+  Columns 9 through 15
+
+    4.7751    3.9206   12.7192    2.3094   -1.8897   -2.4752   -3.4167
+
+vobj_print_virusobj: eta 1 cbar:
+  Columns 1 through 8
+
+ -107.6710  -33.4717    0.9476   14.7346   22.7187  -11.8062  -14.9936   -3.2540
+
+  Columns 9 through 15
+
+    4.7751    3.9206   12.7192    2.3094   -1.8897   -2.4752   -3.4167
+
+vobj_print_virusobj: eta 1 BasisFunctionType 1
+vobj_print_virusobj: eta 1 R1 -1 R2 197.4
+vobj_print_virusobj: eta 1 nu:
+  Columns 1 through 8
+
+    4.6372    0.4481    0.0725    0.0868    0.2065    0.0725    0.0899    0.0725
+
+  Columns 9 through 15
+
+    0.0725    0.0725    0.0725    0.0725    0.0725    0.0725    0.0725
+
+vobj_print_virusobj: eta 1 q 0.568
+vobj_print_virusobj: eta 2 clnp_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.clnp.txt nu_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.nu.txt q_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.q.txt
+vobj_print_virusobj: eta 2 clnp.il:
+  Columns 1 through 14
+
+     0     0     0     0     0     6     6     6     6     6    10    10    10    10
+
+  Column 15
+
+    10
+
+vobj_print_virusobj: eta 2 clnp.in:
+  Columns 1 through 14
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Column 15
+
+     0
+
+vobj_print_virusobj: eta 2 clnp.ip:
+  Columns 1 through 14
+
+     1     2     3     4     5     1     2     3     4     5     1     2     3     4
+
+  Column 15
+
+     5
+
+vobj_print_virusobj: eta 2 clnp.optflag:
+  Columns 1 through 14
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Column 15
+
+     1
+
+vobj_print_virusobj: eta 2 clnp.c:
+  Columns 1 through 8
+
+ -103.7730  -33.3143   -1.0873   14.0521   23.7669    9.2062    7.7516    3.0300
+
+  Columns 9 through 15
+
+   -2.3581   -1.6140    7.6865    3.1821   -0.9742   -3.2610   -2.1209
+
+vobj_print_virusobj: eta 2 cbar:
+  Columns 1 through 8
+
+ -103.7730  -33.3143   -1.0873   14.0521   23.7669    9.2062    7.7516    3.0300
+
+  Columns 9 through 15
+
+   -2.3581   -1.6140    7.6865    3.1821   -0.9742   -3.2610   -2.1209
+
+vobj_print_virusobj: eta 2 BasisFunctionType 1
+vobj_print_virusobj: eta 2 R1 -1 R2 170
+vobj_print_virusobj: eta 2 nu:
+  Columns 1 through 8
+
+    4.3075    0.4439    0.0673    0.0790    0.2259    0.0673    0.0673    0.0673
+
+  Columns 9 through 15
+
+    0.0673    0.0673    0.0673    0.0673    0.0673    0.0673    0.0673
+
+vobj_print_virusobj: eta 2 q 0.432
+hetero: ii 10 misc_diary fn_diary off
+hetero: ii 2 box_readpixelnoisevar fn_pixelnoisevar step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.pixelnoisevar.txt
+hetero: ii 2 box_readpixelnoisevar pixelnoisevar 1.4237e+06
+hetero: ii 3 box_readImagestack: Imagestackformat mrc fn_Imagestack FHV.out.lmax10pmax5.Neta2.rule49.Nv500.pre4hetero.inv.Imagestack.mrc
+hetero: ii 3 box_readImagestack: mrc: startSlice 1 numSlices 500
+
+test1 =
+
+  2.5526e+05
+
+
+test1 =
+
+  2.5526e+05
+
+hetero: ii 4 basic_setsizeof2DreciprocalspaceImagesfromImagestack
+hetero: ii 5 basic_set2Drealspacesamplingintervals deltachi(1) 4.7 deltachi(2) 4.7
+hetero: ii 6 basic_compute2Dreciprocalspaceproperties
+hetero: ii 7 vobj_read_virusobj fn_clnp step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.clnp.txt fn_nu step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.nu.txt fn_q step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.q.txt
+hetero: ii 7 vobj_read_virusobj fn_clnp step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.clnp.txt fn_nu step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.nu.txt fn_q step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.q.txt
+virusobj_read: eta 1, R1 -1, R2 197.4
+rd_nu: nu has zero length.  Therefore will solve a homogeneous problem.
+virusobj_read: eta 2, R1 -1, R2 170
+rd_nu: nu has zero length.  Therefore will solve a homogeneous problem.
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj:
+hetero: ii 8 homo2hetero:
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj eta 1 action 1
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj eta 2 action 1
+virusobj_change_homo2hetero: eta 1: make heterogeneous
+virusobj_change_homo2hetero: eta 2: make heterogeneous
+hetero: ii 9 vobj_print_virusobj
+vobj_print_virusobj: eta 1 clnp_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.clnp.txt nu_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.nu.txt q_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.q.txt
+vobj_print_virusobj: eta 1 clnp.il:
+  Columns 1 through 14
+
+     0     0     0     0     0     6     6     6     6     6    10    10    10    10
+
+  Column 15
+
+    10
+
+vobj_print_virusobj: eta 1 clnp.in:
+  Columns 1 through 14
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Column 15
+
+     0
+
+vobj_print_virusobj: eta 1 clnp.ip:
+  Columns 1 through 14
+
+     1     2     3     4     5     1     2     3     4     5     1     2     3     4
+
+  Column 15
+
+     5
+
+vobj_print_virusobj: eta 1 clnp.optflag:
+  Columns 1 through 14
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Column 15
+
+     1
+
+vobj_print_virusobj: eta 1 clnp.c:
+  Columns 1 through 8
+
+ -107.6710  -33.4717    0.9476   14.7346   22.7187  -11.8062  -14.9936   -3.2540
+
+  Columns 9 through 15
+
+    4.7751    3.9206   12.7192    2.3094   -1.8897   -2.4752   -3.4167
+
+vobj_print_virusobj: eta 1 cbar:
+  Columns 1 through 8
+
+ -107.6710  -33.4717    0.9476   14.7346   22.7187  -11.8062  -14.9936   -3.2540
+
+  Columns 9 through 15
+
+    4.7751    3.9206   12.7192    2.3094   -1.8897   -2.4752   -3.4167
+
+vobj_print_virusobj: eta 1 BasisFunctionType 1
+vobj_print_virusobj: eta 1 R1 -1 R2 197.4
+vobj_print_virusobj: eta 1 nu:
+  Columns 1 through 8
+
+    4.6372    0.4481    0.0725    0.0868    0.2065    0.0725    0.0899    0.0725
+
+  Columns 9 through 15
+
+    0.0725    0.0725    0.0725    0.0725    0.0725    0.0725    0.0725
+
+vobj_print_virusobj: eta 1 q 0.568
+vobj_print_virusobj: eta 2 clnp_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.clnp.txt nu_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.nu.txt q_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.q.txt
+vobj_print_virusobj: eta 2 clnp.il:
+  Columns 1 through 14
+
+     0     0     0     0     0     6     6     6     6     6    10    10    10    10
+
+  Column 15
+
+    10
+
+vobj_print_virusobj: eta 2 clnp.in:
+  Columns 1 through 14
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Column 15
+
+     0
+
+vobj_print_virusobj: eta 2 clnp.ip:
+  Columns 1 through 14
+
+     1     2     3     4     5     1     2     3     4     5     1     2     3     4
+
+  Column 15
+
+     5
+
+vobj_print_virusobj: eta 2 clnp.optflag:
+  Columns 1 through 14
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Column 15
+
+     1
+
+vobj_print_virusobj: eta 2 clnp.c:
+  Columns 1 through 8
+
+ -103.7730  -33.3143   -1.0873   14.0521   23.7669    9.2062    7.7516    3.0300
+
+  Columns 9 through 15
+
+   -2.3581   -1.6140    7.6865    3.1821   -0.9742   -3.2610   -2.1209
+
+vobj_print_virusobj: eta 2 cbar:
+  Columns 1 through 8
+
+ -103.7730  -33.3143   -1.0873   14.0521   23.7669    9.2062    7.7516    3.0300
+
+  Columns 9 through 15
+
+   -2.3581   -1.6140    7.6865    3.1821   -0.9742   -3.2610   -2.1209
+
+vobj_print_virusobj: eta 2 BasisFunctionType 1
+vobj_print_virusobj: eta 2 R1 -1 R2 170
+vobj_print_virusobj: eta 2 nu:
+  Columns 1 through 8
+
+    4.3075    0.4439    0.0673    0.0790    0.2259    0.0673    0.0673    0.0673
+
+  Columns 9 through 15
+
+    0.0673    0.0673    0.0673    0.0673    0.0673    0.0673    0.0673
+
+vobj_print_virusobj: eta 2 q 0.432
+hetero: ii 10 misc_diary fn_diary off
+hetero: ii 2 box_readpixelnoisevar fn_pixelnoisevar step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.pixelnoisevar.txt
+hetero: ii 2 box_readpixelnoisevar pixelnoisevar 1.4237e+06
+hetero: ii 3 box_readImagestack: Imagestackformat mrc fn_Imagestack FHV.out.lmax10pmax5.Neta2.rule49.Nv500.pre4hetero.inv.Imagestack.mrc
+hetero: ii 3 box_readImagestack: mrc: startSlice 1 numSlices 500
+
+test1 =
+
+  2.5526e+05
+
+
+test1 =
+
+  2.5526e+05
+
+hetero: ii 4 basic_setsizeof2DreciprocalspaceImagesfromImagestack
+hetero: ii 5 basic_set2Drealspacesamplingintervals deltachi(1) 4.7 deltachi(2) 4.7
+hetero: ii 6 basic_compute2Dreciprocalspaceproperties
+hetero: ii 7 vobj_read_virusobj fn_clnp step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.clnp.txt fn_nu step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.nu.txt fn_q step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.q.txt
+hetero: ii 7 vobj_read_virusobj fn_clnp step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.clnp.txt fn_nu step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.nu.txt fn_q step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.q.txt
+virusobj_read: eta 1, R1 -1, R2 197.4
+rd_nu: nu has zero length.  Therefore will solve a homogeneous problem.
+virusobj_read: eta 2, R1 -1, R2 170
+rd_nu: nu has zero length.  Therefore will solve a homogeneous problem.
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj:
+hetero: ii 8 homo2hetero:
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj eta 1 action 1
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj eta 2 action 1
+virusobj_change_homo2hetero: eta 1: make heterogeneous
+virusobj_change_homo2hetero: eta 2: make heterogeneous
+hetero: ii 9 vobj_print_virusobj
+vobj_print_virusobj: eta 1 clnp_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.clnp.txt nu_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.nu.txt q_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.q.txt
+vobj_print_virusobj: eta 1 clnp.il:
+  Columns 1 through 14
+
+     0     0     0     0     0     6     6     6     6     6    10    10    10    10
+
+  Column 15
+
+    10
+
+vobj_print_virusobj: eta 1 clnp.in:
+  Columns 1 through 14
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Column 15
+
+     0
+
+vobj_print_virusobj: eta 1 clnp.ip:
+  Columns 1 through 14
+
+     1     2     3     4     5     1     2     3     4     5     1     2     3     4
+
+  Column 15
+
+     5
+
+vobj_print_virusobj: eta 1 clnp.optflag:
+  Columns 1 through 14
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Column 15
+
+     1
+
+vobj_print_virusobj: eta 1 clnp.c:
+  Columns 1 through 8
+
+ -107.6710  -33.4717    0.9476   14.7346   22.7187  -11.8062  -14.9936   -3.2540
+
+  Columns 9 through 15
+
+    4.7751    3.9206   12.7192    2.3094   -1.8897   -2.4752   -3.4167
+
+vobj_print_virusobj: eta 1 cbar:
+  Columns 1 through 8
+
+ -107.6710  -33.4717    0.9476   14.7346   22.7187  -11.8062  -14.9936   -3.2540
+
+  Columns 9 through 15
+
+    4.7751    3.9206   12.7192    2.3094   -1.8897   -2.4752   -3.4167
+
+vobj_print_virusobj: eta 1 BasisFunctionType 1
+vobj_print_virusobj: eta 1 R1 -1 R2 197.4
+vobj_print_virusobj: eta 1 nu:
+  Columns 1 through 8
+
+    4.6372    0.4481    0.0725    0.0868    0.2065    0.0725    0.0899    0.0725
+
+  Columns 9 through 15
+
+    0.0725    0.0725    0.0725    0.0725    0.0725    0.0725    0.0725
+
+vobj_print_virusobj: eta 1 q 0.568
+vobj_print_virusobj: eta 2 clnp_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.clnp.txt nu_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.nu.txt q_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.q.txt
+vobj_print_virusobj: eta 2 clnp.il:
+  Columns 1 through 14
+
+     0     0     0     0     0     6     6     6     6     6    10    10    10    10
+
+  Column 15
+
+    10
+
+vobj_print_virusobj: eta 2 clnp.in:
+  Columns 1 through 14
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Column 15
+
+     0
+
+vobj_print_virusobj: eta 2 clnp.ip:
+  Columns 1 through 14
+
+     1     2     3     4     5     1     2     3     4     5     1     2     3     4
+
+  Column 15
+
+     5
+
+vobj_print_virusobj: eta 2 clnp.optflag:
+  Columns 1 through 14
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Column 15
+
+     1
+
+vobj_print_virusobj: eta 2 clnp.c:
+  Columns 1 through 8
+
+ -103.7730  -33.3143   -1.0873   14.0521   23.7669    9.2062    7.7516    3.0300
+
+  Columns 9 through 15
+
+   -2.3581   -1.6140    7.6865    3.1821   -0.9742   -3.2610   -2.1209
+
+vobj_print_virusobj: eta 2 cbar:
+  Columns 1 through 8
+
+ -103.7730  -33.3143   -1.0873   14.0521   23.7669    9.2062    7.7516    3.0300
+
+  Columns 9 through 15
+
+   -2.3581   -1.6140    7.6865    3.1821   -0.9742   -3.2610   -2.1209
+
+vobj_print_virusobj: eta 2 BasisFunctionType 1
+vobj_print_virusobj: eta 2 R1 -1 R2 170
+vobj_print_virusobj: eta 2 nu:
+  Columns 1 through 8
+
+    4.3075    0.4439    0.0673    0.0790    0.2259    0.0673    0.0673    0.0673
+
+  Columns 9 through 15
+
+    0.0673    0.0673    0.0673    0.0673    0.0673    0.0673    0.0673
+
+vobj_print_virusobj: eta 2 q 0.432
+hetero: ii 10 misc_diary fn_diary off
+hetero: ii 2 box_readpixelnoisevar fn_pixelnoisevar step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.pixelnoisevar.txt
+hetero: ii 2 box_readpixelnoisevar pixelnoisevar 1.4237e+06
+hetero: ii 3 box_readImagestack: Imagestackformat mrc fn_Imagestack FHV.out.lmax10pmax5.Neta2.rule49.Nv500.pre4hetero.inv.Imagestack.mrc
+hetero: ii 3 box_readImagestack: mrc: startSlice 1 numSlices 500
+
+test1 =
+
+  2.5526e+05
+
+
+test1 =
+
+  2.5526e+05
+
+hetero: ii 4 basic_setsizeof2DreciprocalspaceImagesfromImagestack
+hetero: ii 5 basic_set2Drealspacesamplingintervals deltachi(1) 4.7 deltachi(2) 4.7
+hetero: ii 6 basic_compute2Dreciprocalspaceproperties
+hetero: ii 7 vobj_read_virusobj fn_clnp step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.clnp.txt fn_nu step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.nu.txt fn_q step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.q.txt
+hetero: ii 7 vobj_read_virusobj fn_clnp step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.clnp.txt fn_nu step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.nu.txt fn_q step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.q.txt
+virusobj_read: eta 1, R1 -1, R2 197.4
+rd_nu: nu has zero length.  Therefore will solve a homogeneous problem.
+virusobj_read: eta 2, R1 -1, R2 170
+rd_nu: nu has zero length.  Therefore will solve a homogeneous problem.
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj:
+hetero: ii 8 homo2hetero:
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj eta 1 action 1
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj eta 2 action 1
+virusobj_change_homo2hetero: eta 1: make heterogeneous
+virusobj_change_homo2hetero: eta 2: make heterogeneous
+hetero: ii 9 vobj_print_virusobj
+vobj_print_virusobj: eta 1 clnp_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.clnp.txt nu_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.nu.txt q_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.q.txt
+vobj_print_virusobj: eta 1 clnp.il:
+  Columns 1 through 14
+
+     0     0     0     0     0     6     6     6     6     6    10    10    10    10
+
+  Column 15
+
+    10
+
+vobj_print_virusobj: eta 1 clnp.in:
+  Columns 1 through 14
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Column 15
+
+     0
+
+vobj_print_virusobj: eta 1 clnp.ip:
+  Columns 1 through 14
+
+     1     2     3     4     5     1     2     3     4     5     1     2     3     4
+
+  Column 15
+
+     5
+
+vobj_print_virusobj: eta 1 clnp.optflag:
+  Columns 1 through 14
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Column 15
+
+     1
+
+vobj_print_virusobj: eta 1 clnp.c:
+  Columns 1 through 8
+
+ -107.6710  -33.4717    0.9476   14.7346   22.7187  -11.8062  -14.9936   -3.2540
+
+  Columns 9 through 15
+
+    4.7751    3.9206   12.7192    2.3094   -1.8897   -2.4752   -3.4167
+
+vobj_print_virusobj: eta 1 cbar:
+  Columns 1 through 8
+
+ -107.6710  -33.4717    0.9476   14.7346   22.7187  -11.8062  -14.9936   -3.2540
+
+  Columns 9 through 15
+
+    4.7751    3.9206   12.7192    2.3094   -1.8897   -2.4752   -3.4167
+
+vobj_print_virusobj: eta 1 BasisFunctionType 1
+vobj_print_virusobj: eta 1 R1 -1 R2 197.4
+vobj_print_virusobj: eta 1 nu:
+  Columns 1 through 8
+
+    4.6372    0.4481    0.0725    0.0868    0.2065    0.0725    0.0899    0.0725
+
+  Columns 9 through 15
+
+    0.0725    0.0725    0.0725    0.0725    0.0725    0.0725    0.0725
+
+vobj_print_virusobj: eta 1 q 0.568
+vobj_print_virusobj: eta 2 clnp_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.clnp.txt nu_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.nu.txt q_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.q.txt
+vobj_print_virusobj: eta 2 clnp.il:
+  Columns 1 through 14
+
+     0     0     0     0     0     6     6     6     6     6    10    10    10    10
+
+  Column 15
+
+    10
+
+vobj_print_virusobj: eta 2 clnp.in:
+  Columns 1 through 14
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Column 15
+
+     0
+
+vobj_print_virusobj: eta 2 clnp.ip:
+  Columns 1 through 14
+
+     1     2     3     4     5     1     2     3     4     5     1     2     3     4
+
+  Column 15
+
+     5
+
+vobj_print_virusobj: eta 2 clnp.optflag:
+  Columns 1 through 14
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Column 15
+
+     1
+
+vobj_print_virusobj: eta 2 clnp.c:
+  Columns 1 through 8
+
+ -103.7730  -33.3143   -1.0873   14.0521   23.7669    9.2062    7.7516    3.0300
+
+  Columns 9 through 15
+
+   -2.3581   -1.6140    7.6865    3.1821   -0.9742   -3.2610   -2.1209
+
+vobj_print_virusobj: eta 2 cbar:
+  Columns 1 through 8
+
+ -103.7730  -33.3143   -1.0873   14.0521   23.7669    9.2062    7.7516    3.0300
+
+  Columns 9 through 15
+
+   -2.3581   -1.6140    7.6865    3.1821   -0.9742   -3.2610   -2.1209
+
+vobj_print_virusobj: eta 2 BasisFunctionType 1
+vobj_print_virusobj: eta 2 R1 -1 R2 170
+vobj_print_virusobj: eta 2 nu:
+  Columns 1 through 8
+
+    4.3075    0.4439    0.0673    0.0790    0.2259    0.0673    0.0673    0.0673
+
+  Columns 9 through 15
+
+    0.0673    0.0673    0.0673    0.0673    0.0673    0.0673    0.0673
+
+vobj_print_virusobj: eta 2 q 0.432
+hetero: ii 10 misc_diary fn_diary off
+hetero: ii 2 box_readpixelnoisevar fn_pixelnoisevar step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.pixelnoisevar.txt
+hetero: ii 2 box_readpixelnoisevar pixelnoisevar 1.4237e+06
+hetero: ii 3 box_readImagestack: Imagestackformat mrc fn_Imagestack FHV.out.lmax10pmax5.Neta2.rule49.Nv500.pre4hetero.inv.Imagestack.mrc
+hetero: ii 3 box_readImagestack: mrc: startSlice 1 numSlices 500
+
+test1 =
+
+  2.5526e+05
+
+
+test1 =
+
+  2.5526e+05
+
+hetero: ii 4 basic_setsizeof2DreciprocalspaceImagesfromImagestack
+hetero: ii 5 basic_set2Drealspacesamplingintervals deltachi(1) 4.7 deltachi(2) 4.7
+hetero: ii 6 basic_compute2Dreciprocalspaceproperties
+hetero: ii 7 vobj_read_virusobj fn_clnp step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.clnp.txt fn_nu step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.nu.txt fn_q step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.q.txt
+hetero: ii 7 vobj_read_virusobj fn_clnp step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.clnp.txt fn_nu step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.nu.txt fn_q step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.q.txt
+virusobj_read: eta 1, R1 -1, R2 197.4
+rd_nu: nu has zero length.  Therefore will solve a homogeneous problem.
+virusobj_read: eta 2, R1 -1, R2 170
+rd_nu: nu has zero length.  Therefore will solve a homogeneous problem.
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj:
+hetero: ii 8 homo2hetero:
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj eta 1 action 1
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj eta 2 action 1
+virusobj_change_homo2hetero: eta 1: make heterogeneous
+virusobj_change_homo2hetero: eta 2: make heterogeneous
+hetero: ii 9 vobj_print_virusobj
+vobj_print_virusobj: eta 1 clnp_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.clnp.txt nu_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.nu.txt q_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.q.txt
+vobj_print_virusobj: eta 1 clnp.il:
+  Columns 1 through 14
+
+     0     0     0     0     0     6     6     6     6     6    10    10    10    10
+
+  Column 15
+
+    10
+
+vobj_print_virusobj: eta 1 clnp.in:
+  Columns 1 through 14
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Column 15
+
+     0
+
+vobj_print_virusobj: eta 1 clnp.ip:
+  Columns 1 through 14
+
+     1     2     3     4     5     1     2     3     4     5     1     2     3     4
+
+  Column 15
+
+     5
+
+vobj_print_virusobj: eta 1 clnp.optflag:
+  Columns 1 through 14
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Column 15
+
+     1
+
+vobj_print_virusobj: eta 1 clnp.c:
+  Columns 1 through 8
+
+ -107.6710  -33.4717    0.9476   14.7346   22.7187  -11.8062  -14.9936   -3.2540
+
+  Columns 9 through 15
+
+    4.7751    3.9206   12.7192    2.3094   -1.8897   -2.4752   -3.4167
+
+vobj_print_virusobj: eta 1 cbar:
+  Columns 1 through 8
+
+ -107.6710  -33.4717    0.9476   14.7346   22.7187  -11.8062  -14.9936   -3.2540
+
+  Columns 9 through 15
+
+    4.7751    3.9206   12.7192    2.3094   -1.8897   -2.4752   -3.4167
+
+vobj_print_virusobj: eta 1 BasisFunctionType 1
+vobj_print_virusobj: eta 1 R1 -1 R2 197.4
+vobj_print_virusobj: eta 1 nu:
+  Columns 1 through 8
+
+    4.6372    0.4481    0.0725    0.0868    0.2065    0.0725    0.0899    0.0725
+
+  Columns 9 through 15
+
+    0.0725    0.0725    0.0725    0.0725    0.0725    0.0725    0.0725
+
+vobj_print_virusobj: eta 1 q 0.568
+vobj_print_virusobj: eta 2 clnp_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.clnp.txt nu_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.nu.txt q_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.q.txt
+vobj_print_virusobj: eta 2 clnp.il:
+  Columns 1 through 14
+
+     0     0     0     0     0     6     6     6     6     6    10    10    10    10
+
+  Column 15
+
+    10
+
+vobj_print_virusobj: eta 2 clnp.in:
+  Columns 1 through 14
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Column 15
+
+     0
+
+vobj_print_virusobj: eta 2 clnp.ip:
+  Columns 1 through 14
+
+     1     2     3     4     5     1     2     3     4     5     1     2     3     4
+
+  Column 15
+
+     5
+
+vobj_print_virusobj: eta 2 clnp.optflag:
+  Columns 1 through 14
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Column 15
+
+     1
+
+vobj_print_virusobj: eta 2 clnp.c:
+  Columns 1 through 8
+
+ -103.7730  -33.3143   -1.0873   14.0521   23.7669    9.2062    7.7516    3.0300
+
+  Columns 9 through 15
+
+   -2.3581   -1.6140    7.6865    3.1821   -0.9742   -3.2610   -2.1209
+
+vobj_print_virusobj: eta 2 cbar:
+  Columns 1 through 8
+
+ -103.7730  -33.3143   -1.0873   14.0521   23.7669    9.2062    7.7516    3.0300
+
+  Columns 9 through 15
+
+   -2.3581   -1.6140    7.6865    3.1821   -0.9742   -3.2610   -2.1209
+
+vobj_print_virusobj: eta 2 BasisFunctionType 1
+vobj_print_virusobj: eta 2 R1 -1 R2 170
+vobj_print_virusobj: eta 2 nu:
+  Columns 1 through 8
+
+    4.3075    0.4439    0.0673    0.0790    0.2259    0.0673    0.0673    0.0673
+
+  Columns 9 through 15
+
+    0.0673    0.0673    0.0673    0.0673    0.0673    0.0673    0.0673
+
+vobj_print_virusobj: eta 2 q 0.432
+hetero: ii 10 misc_diary fn_diary off
+hetero: ii 2 box_readpixelnoisevar fn_pixelnoisevar step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.pixelnoisevar.txt
+hetero: ii 2 box_readpixelnoisevar pixelnoisevar 1.4237e+06
+hetero: ii 3 box_readImagestack: Imagestackformat mrc fn_Imagestack FHV.out.lmax10pmax5.Neta2.rule49.Nv500.pre4hetero.inv.Imagestack.mrc
+hetero: ii 3 box_readImagestack: mrc: startSlice 1 numSlices 500
+hetero: ii 4 basic_setsizeof2DreciprocalspaceImagesfromImagestack
+hetero: ii 5 basic_set2Drealspacesamplingintervals deltachi(1) 4.7 deltachi(2) 4.7
+hetero: ii 6 basic_compute2Dreciprocalspaceproperties
+hetero: ii 7 vobj_read_virusobj fn_clnp step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.clnp.txt fn_nu step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.nu.txt fn_q step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.q.txt
+hetero: ii 7 vobj_read_virusobj fn_clnp step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.clnp.txt fn_nu step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.nu.txt fn_q step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.q.txt
+virusobj_read: eta 1, R1 -1, R2 197.4
+rd_nu: nu has zero length.  Therefore will solve a homogeneous problem.
+virusobj_read: eta 2, R1 -1, R2 170
+rd_nu: nu has zero length.  Therefore will solve a homogeneous problem.
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj:
+hetero: ii 8 homo2hetero:
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj eta 1 action 1
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj eta 2 action 1
+virusobj_change_homo2hetero: eta 1: make heterogeneous
+virusobj_change_homo2hetero: eta 2: make heterogeneous
+hetero: ii 9 vobj_print_virusobj
+vobj_print_virusobj: eta 1 clnp_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.clnp.txt nu_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.nu.txt q_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.q.txt
+vobj_print_virusobj: eta 1 clnp.il:
+  Columns 1 through 13
+     0     0     0     0     0     6     6     6     6     6    10    10    10
+  Columns 14 through 15
+    10    10
+vobj_print_virusobj: eta 1 clnp.in:
+  Columns 1 through 13
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+  Columns 14 through 15
+     0     0
+vobj_print_virusobj: eta 1 clnp.ip:
+  Columns 1 through 13
+     1     2     3     4     5     1     2     3     4     5     1     2     3
+  Columns 14 through 15
+     4     5
+vobj_print_virusobj: eta 1 clnp.optflag:
+  Columns 1 through 13
+     1     1     1     1     1     1     1     1     1     1     1     1     1
+  Columns 14 through 15
+     1     1
+vobj_print_virusobj: eta 1 clnp.c:
+  Columns 1 through 7
+ -107.6710  -33.4717    0.9476   14.7346   22.7187  -11.8062  -14.9936
+  Columns 8 through 14
+   -3.2540    4.7751    3.9206   12.7192    2.3094   -1.8897   -2.4752
+  Column 15
+   -3.4167
+vobj_print_virusobj: eta 1 cbar:
+  Columns 1 through 7
+ -107.6710  -33.4717    0.9476   14.7346   22.7187  -11.8062  -14.9936
+  Columns 8 through 14
+   -3.2540    4.7751    3.9206   12.7192    2.3094   -1.8897   -2.4752
+  Column 15
+   -3.4167
+vobj_print_virusobj: eta 1 BasisFunctionType 1
+vobj_print_virusobj: eta 1 R1 -1 R2 197.4
+vobj_print_virusobj: eta 1 nu:
+  Columns 1 through 7
+    4.6372    0.4481    0.0725    0.0868    0.2065    0.0725    0.0899
+  Columns 8 through 14
+    0.0725    0.0725    0.0725    0.0725    0.0725    0.0725    0.0725
+  Column 15
+    0.0725
+vobj_print_virusobj: eta 1 q 0.568
+vobj_print_virusobj: eta 2 clnp_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.clnp.txt nu_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.nu.txt q_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.q.txt
+vobj_print_virusobj: eta 2 clnp.il:
+  Columns 1 through 13
+     0     0     0     0     0     6     6     6     6     6    10    10    10
+  Columns 14 through 15
+    10    10
+vobj_print_virusobj: eta 2 clnp.in:
+  Columns 1 through 13
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+  Columns 14 through 15
+     0     0
+vobj_print_virusobj: eta 2 clnp.ip:
+  Columns 1 through 13
+     1     2     3     4     5     1     2     3     4     5     1     2     3
+  Columns 14 through 15
+     4     5
+vobj_print_virusobj: eta 2 clnp.optflag:
+  Columns 1 through 13
+     1     1     1     1     1     1     1     1     1     1     1     1     1
+  Columns 14 through 15
+     1     1
+vobj_print_virusobj: eta 2 clnp.c:
+  Columns 1 through 7
+ -103.7730  -33.3143   -1.0873   14.0520   23.7669    9.2062    7.7516
+  Columns 8 through 14
+    3.0301   -2.3581   -1.6140    7.6865    3.1821   -0.9742   -3.2610
+  Column 15
+   -2.1209
+vobj_print_virusobj: eta 2 cbar:
+  Columns 1 through 7
+ -103.7730  -33.3143   -1.0873   14.0520   23.7669    9.2062    7.7516
+  Columns 8 through 14
+    3.0301   -2.3581   -1.6140    7.6865    3.1821   -0.9742   -3.2610
+  Column 15
+   -2.1209
+vobj_print_virusobj: eta 2 BasisFunctionType 1
+vobj_print_virusobj: eta 2 R1 -1 R2 170
+vobj_print_virusobj: eta 2 nu:
+  Columns 1 through 7
+    4.3075    0.4439    0.0673    0.0790    0.2259    0.0673    0.0673
+  Columns 8 through 14
+    0.0673    0.0673    0.0673    0.0673    0.0673    0.0673    0.0673
+  Column 15
+    0.0673
+vobj_print_virusobj: eta 2 q 0.432
+hetero: ii 10 misc_diary fn_diary off
+hetero: ii 2 box_readpixelnoisevar fn_pixelnoisevar step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.pixelnoisevar.txt
+hetero: ii 2 box_readpixelnoisevar pixelnoisevar 1.4237e+06
+hetero: ii 3 box_readImagestack: Imagestackformat mrc fn_Imagestack FHV.out.lmax10pmax5.Neta2.rule49.Nv500.pre4hetero.inv.Imagestack.mrc
+hetero: ii 3 box_readImagestack: mrc: startSlice 1 numSlices 500
+hetero: ii 4 basic_setsizeof2DreciprocalspaceImagesfromImagestack
+hetero: ii 5 basic_set2Drealspacesamplingintervals deltachi(1) 4.7 deltachi(2) 4.7
+hetero: ii 6 basic_compute2Dreciprocalspaceproperties
+hetero: ii 7 vobj_read_virusobj fn_clnp step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.clnp.txt fn_nu step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.nu.txt fn_q step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.q.txt
+hetero: ii 7 vobj_read_virusobj fn_clnp step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.clnp.txt fn_nu step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.nu.txt fn_q step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.q.txt
+virusobj_read: eta 1, R1 -1, R2 197.4
+rd_nu: nu has zero length.  Therefore will solve a homogeneous problem.
+virusobj_read: eta 2, R1 -1, R2 170
+rd_nu: nu has zero length.  Therefore will solve a homogeneous problem.
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj:
+hetero: ii 8 homo2hetero:
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj eta 1 action 1
+hetero: ii 8 vobj_change_homo2hetero_in_virusobj eta 2 action 1
+virusobj_change_homo2hetero: eta 1: make heterogeneous
+virusobj_change_homo2hetero: eta 2: make heterogeneous
+hetero: ii 9 vobj_print_virusobj
+vobj_print_virusobj: eta 1 clnp_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.clnp.txt nu_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.nu.txt q_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.q.txt
+vobj_print_virusobj: eta 1 clnp.il:
+  Columns 1 through 13
+     0     0     0     0     0     6     6     6     6     6    10    10    10
+  Columns 14 through 15
+    10    10
+vobj_print_virusobj: eta 1 clnp.in:
+  Columns 1 through 13
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+  Columns 14 through 15
+     0     0
+vobj_print_virusobj: eta 1 clnp.ip:
+  Columns 1 through 13
+     1     2     3     4     5     1     2     3     4     5     1     2     3
+  Columns 14 through 15
+     4     5
+vobj_print_virusobj: eta 1 clnp.optflag:
+  Columns 1 through 13
+     1     1     1     1     1     1     1     1     1     1     1     1     1
+  Columns 14 through 15
+     1     1
+vobj_print_virusobj: eta 1 clnp.c:
+  Columns 1 through 7
+ -107.6710  -33.4717    0.9476   14.7346   22.7187  -11.8062  -14.9936
+  Columns 8 through 14
+   -3.2540    4.7751    3.9206   12.7192    2.3094   -1.8897   -2.4752
+  Column 15
+   -3.4167
+vobj_print_virusobj: eta 1 cbar:
+  Columns 1 through 7
+ -107.6710  -33.4717    0.9476   14.7346   22.7187  -11.8062  -14.9936
+  Columns 8 through 14
+   -3.2540    4.7751    3.9206   12.7192    2.3094   -1.8897   -2.4752
+  Column 15
+   -3.4167
+vobj_print_virusobj: eta 1 BasisFunctionType 1
+vobj_print_virusobj: eta 1 R1 -1 R2 197.4
+vobj_print_virusobj: eta 1 nu:
+  Columns 1 through 7
+    4.6372    0.4481    0.0725    0.0868    0.2065    0.0725    0.0899
+  Columns 8 through 14
+    0.0725    0.0725    0.0725    0.0725    0.0725    0.0725    0.0725
+  Column 15
+    0.0725
+vobj_print_virusobj: eta 1 q 0.568
+vobj_print_virusobj: eta 2 clnp_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.clnp.txt nu_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.nu.txt q_fn step3/FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.q.txt
+vobj_print_virusobj: eta 2 clnp.il:
+  Columns 1 through 13
+     0     0     0     0     0     6     6     6     6     6    10    10    10
+  Columns 14 through 15
+    10    10
+vobj_print_virusobj: eta 2 clnp.in:
+  Columns 1 through 13
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+  Columns 14 through 15
+     0     0
+vobj_print_virusobj: eta 2 clnp.ip:
+  Columns 1 through 13
+     1     2     3     4     5     1     2     3     4     5     1     2     3
+  Columns 14 through 15
+     4     5
+vobj_print_virusobj: eta 2 clnp.optflag:
+  Columns 1 through 13
+     1     1     1     1     1     1     1     1     1     1     1     1     1
+  Columns 14 through 15
+     1     1
+vobj_print_virusobj: eta 2 clnp.c:
+  Columns 1 through 7
+ -103.7730  -33.3143   -1.0873   14.0520   23.7669    9.2062    7.7516
+  Columns 8 through 14
+    3.0301   -2.3581   -1.6140    7.6865    3.1821   -0.9742   -3.2610
+  Column 15
+   -2.1209
+vobj_print_virusobj: eta 2 cbar:
+  Columns 1 through 7
+ -103.7730  -33.3143   -1.0873   14.0520   23.7669    9.2062    7.7516
+  Columns 8 through 14
+    3.0301   -2.3581   -1.6140    7.6865    3.1821   -0.9742   -3.2610
+  Column 15
+   -2.1209
+vobj_print_virusobj: eta 2 BasisFunctionType 1
+vobj_print_virusobj: eta 2 R1 -1 R2 170
+vobj_print_virusobj: eta 2 nu:
+  Columns 1 through 7
+    4.3075    0.4439    0.0673    0.0790    0.2259    0.0673    0.0673
+  Columns 8 through 14
+    0.0673    0.0673    0.0673    0.0673    0.0673    0.0673    0.0673
+  Column 15
+    0.0673
+vobj_print_virusobj: eta 2 q 0.432
+hetero: ii 10 misc_diary fn_diary off

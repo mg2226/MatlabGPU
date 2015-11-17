@@ -1,0 +1,80 @@
+hetero: ii 28 vobj_change_size_of_virusobj:
+hetero: ii 28 vlmax:
+     0     0
+
+hetero: ii 28 vpmax:
+     4     4
+
+virusobj_changesize: eta 1 ln 1
+virusobj_changesize: eta 2 ln 1
+hetero: ii 29 vobj_print_virusobj
+vobj_print_virusobj: eta 1 clnp_fn FHV.ic.lmax0pmax1.clnp.c001iszero.txt++ nu_fn FHV.ic.lmax0pmax1.nu.homogeneous.txt++ q_fn FHV.ic.lmax0pmax1.q.equalclassprobs.txt++
+vobj_print_virusobj: eta 1 clnp.il:
+     0     0     0     0
+
+vobj_print_virusobj: eta 1 clnp.in:
+     0     0     0     0
+
+vobj_print_virusobj: eta 1 clnp.ip:
+     1     2     3     4
+
+vobj_print_virusobj: eta 1 clnp.optflag:
+     1     1     1     1
+
+vobj_print_virusobj: eta 1 clnp.c:
+ -105.2826  -18.8561   14.7237   18.8588
+
+vobj_print_virusobj: eta 1 cbar:
+ -105.2826  -18.8561   14.7237   18.8588
+
+vobj_print_virusobj: eta 1 BasisFunctionType 1
+vobj_print_virusobj: eta 1 R1 -1 R2 197.4
+vobj_print_virusobj: eta 1 nu:
+vobj_print_virusobj: eta 1 q 0.5
+vobj_print_virusobj: eta 2 clnp_fn FHV.ic.lmax0pmax1.clnp.perturbed.c001iszero.txt++ nu_fn FHV.ic.lmax0pmax1.nu.homogeneous.txt++ q_fn FHV.ic.lmax0pmax1.q.equalclassprobs.txt++
+vobj_print_virusobj: eta 2 clnp.il:
+     0     0     0     0
+
+vobj_print_virusobj: eta 2 clnp.in:
+     0     0     0     0
+
+vobj_print_virusobj: eta 2 clnp.ip:
+     1     2     3     4
+
+vobj_print_virusobj: eta 2 clnp.optflag:
+     1     1     1     1
+
+vobj_print_virusobj: eta 2 clnp.c:
+ -100.9906  -43.4182  -17.3316   -7.2295
+
+vobj_print_virusobj: eta 2 cbar:
+ -100.9906  -43.4182  -17.3316   -7.2295
+
+vobj_print_virusobj: eta 2 BasisFunctionType 1
+vobj_print_virusobj: eta 2 R1 -1 R2 170
+vobj_print_virusobj: eta 2 nu:
+vobj_print_virusobj: eta 2 q 0.5
+hetero: ii 30 EM_read_tilde_b fn_tilde_b callti.out.read_by_C
+hetero: ii 31 EM_extractdatasubset kmax 0.052607
+hetero: ii 31 EM_extractdatasubset Ny=size(vk,1)=799
+hetero: ii 32 EM_set_2Dreciprocal_in_virusobj use_vkminimalset_rather_than_vk 0
+virusobj_set_2Dreciprocal: vobj{eta}.R1<0.0 means use H_{l,p}(r) on [0,R_2)
+virusobj_set_2Dreciprocal: vobj{eta}.R1>=0.0 means use H_{l,p}(r) on (R_1,R_2) with R_1>=0
+virusobj_set_2Dreciprocal: the reciprocal-space radial basis functions are the same for all values of vobj{eta}.BasisFunctionType: 
+virusobj_set_2Dreciprocal: vobj{eta=1}.BasisFunctionType=1
+virusobj_set_2Dreciprocal: vobj{eta=2}.BasisFunctionType=1
+hetero: ii 33 quad_read_integration_rule fn_rule /profession/[14Spring]-MEng Project/pd83@ece.cornell.edu/hetero00.71/rule_small_3_rulechopper
+{Error using <a href="matlab:helpUtils.errorDocCallback('rd_rule', '/Users/YunHan/Google Drive/WorkSpace/FHVMatlab/hetero00.71/rd_rule.m', 5)" style="font-weight:bold">rd_rule</a> (<a href="matlab: opentoline('/Users/YunHan/Google Drive/WorkSpace/FHVMatlab/hetero00.71/rd_rule.m',5,0)">line 5</a>)
+rd_rule: fopen: /profession/[14Spring]-MEng Project/pd83@ece.cornell.edu/hetero00.71/rule_small_3_rulechopper
+
+Error in <a href="matlab:helpUtils.errorDocCallback('hetero', '/Users/YunHan/Google Drive/WorkSpace/FHVMatlab/hetero00.71/hetero.m', 779)" style="font-weight:bold">hetero</a> (<a href="matlab: opentoline('/Users/YunHan/Google Drive/WorkSpace/FHVMatlab/hetero00.71/hetero.m',779,0)">line 779</a>)
+      rule=rd_rule(cmd{ii}.fn_rule);
+
+Error in <a href="matlab:helpUtils.errorDocCallback('inst_Neta2_rule49_Nv500_homo_inv', '/Users/YunHan/Google Drive/WorkSpace/FHVMatlab/FHV.syntheticdata4hetero00.7/inst_Neta2_rule49_Nv500_homo_inv.m', 257)" style="font-weight:bold">inst_Neta2_rule49_Nv500_homo_inv</a> (<a href="matlab: opentoline('/Users/YunHan/Google Drive/WorkSpace/FHVMatlab/FHV.syntheticdata4hetero00.7/inst_Neta2_rule49_Nv500_homo_inv.m',257,0)">line 257</a>)
+hetero(cmd);
+} 
+helpUtils.errorDocCallback('rd_rule', '/Users/YunHan/Google Drive/WorkSpace/FHVMatlab/hetero00.71/rd_rule.m', 5)
+helpUtils.errorDocCallback('hetero', '/Users/YunHan/Google Drive/WorkSpace/FHVMatlab/hetero00.71/hetero.m', 779)
+inst_Neta2_rule49_Nv500_homo_inv
+inst_Neta2_rule49_Nv500_homo_inv: outputbasename FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv
+hetero: ii 1 misc_diary fn_diary FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.diary.txt

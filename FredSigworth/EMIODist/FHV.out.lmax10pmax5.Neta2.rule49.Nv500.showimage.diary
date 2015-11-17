@@ -1,0 +1,7 @@
+hetero: ii 2 box_readimagestack: imagestackformat mrc fn_imagestack FHV.out.lmax10pmax5.Neta2.rule49.Nv500.fw.imagestack.mrc
+hetero: ii 2 box_readimagestack: mrc: startSlice 1 numSlices 500
+hetero: ii 3 box_showimagestack: whichimages: 1 3 5 7 9
+hetero: ii 3 box_showimagestack: printtitle 1
+hetero: ii 3 box_showimagestack: fn_class FHV.out.lmax10pmax5.Neta2.rule49.Nv500.fw.truevalues.txt
+hetero: ii 3 box_showimagestack: each image has a different colormap
+hetero: ii 4 misc_diary fn_diary off

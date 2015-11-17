@@ -1,0 +1,103 @@
+hetero: ii 2 misc_setpseudorandomnumberseed pseudorandomnumberseed 29831
+hetero: ii 3 box_readimagestack: imagestackformat mrc fn_imagestack FHV.out.lmax10pmax5.Neta2.rule49.Nv500.fw.imagestack.mrc
+hetero: ii 3 box_readimagestack: mrc: startSlice 1 numSlices 500
+hetero: ii 4 basic_setsizeof2Drealspaceimagesfromimagestack
+hetero: ii 5 basic_set2Drealspacesamplingintervals deltachi(1) 4.7 deltachi(2) 4.7
+hetero: ii 6 box_annulusstatistics: radius01 202.1 244.4
+hetero: ii 6 box_annulusstatistics: number of pixels in the annulus 1828
+hetero: ii 6 box_annulusstatistics: annulussamplemean -0.0199884 annulussamplevariance 343.847
+hetero: ii 7 basic_compute2Dreciprocalspaceproperties
+hetero: ii 8 basic_realrecip_2DFFT
+hetero: ii 9 vobj_read_virusobj fn_clnp FHV.ic.lmax0pmax1.clnp.c001iszero.txt fn_nu FHV.ic.lmax0pmax1.nu.homogeneous.txt fn_q FHV.ic.lmax0pmax1.q.equalclassprobs.txt
+hetero: ii 9 vobj_read_virusobj fn_clnp FHV.ic.lmax0pmax1.clnp.perturbed.c001iszero.txt fn_nu FHV.ic.lmax0pmax1.nu.homogeneous.txt fn_q FHV.ic.lmax0pmax1.q.equalclassprobs.txt
+virusobj_read: eta 1, R1 -1, R2 197.4
+rd_nu: nu has zero length.  Therefore will solve a homogeneous problem.
+virusobj_read: eta 2, R1 -1, R2 170
+rd_nu: nu has zero length.  Therefore will solve a homogeneous problem.
+hetero: ii 10 vobj_print_virusobj
+vobj_print_virusobj: eta 1 clnp_fn FHV.ic.lmax0pmax1.clnp.c001iszero.txt nu_fn FHV.ic.lmax0pmax1.nu.homogeneous.txt q_fn FHV.ic.lmax0pmax1.q.equalclassprobs.txt
+vobj_print_virusobj: eta 1 clnp.il:
+     0
+vobj_print_virusobj: eta 1 clnp.in:
+     0
+vobj_print_virusobj: eta 1 clnp.ip:
+     1
+vobj_print_virusobj: eta 1 clnp.optflag:
+     1
+vobj_print_virusobj: eta 1 clnp.c:
+     0
+vobj_print_virusobj: eta 1 cbar:
+     0
+vobj_print_virusobj: eta 1 BasisFunctionType 1
+vobj_print_virusobj: eta 1 R1 -1 R2 197.4
+vobj_print_virusobj: eta 1 nu:
+vobj_print_virusobj: eta 1 q 0.5
+vobj_print_virusobj: eta 2 clnp_fn FHV.ic.lmax0pmax1.clnp.perturbed.c001iszero.txt nu_fn FHV.ic.lmax0pmax1.nu.homogeneous.txt q_fn FHV.ic.lmax0pmax1.q.equalclassprobs.txt
+vobj_print_virusobj: eta 2 clnp.il:
+     0
+vobj_print_virusobj: eta 2 clnp.in:
+     0
+vobj_print_virusobj: eta 2 clnp.ip:
+     1
+vobj_print_virusobj: eta 2 clnp.optflag:
+     1
+vobj_print_virusobj: eta 2 clnp.c:
+     0
+vobj_print_virusobj: eta 2 cbar:
+     0
+vobj_print_virusobj: eta 2 BasisFunctionType 1
+vobj_print_virusobj: eta 2 R1 -1 R2 170
+vobj_print_virusobj: eta 2 nu:
+vobj_print_virusobj: eta 2 q 0.5
+hetero: ii 11 vobj_change_size_of_virusobj:
+hetero: ii 11 vlmax:
+     0     0
+hetero: ii 11 vpmax:
+     4     4
+virusobj_changesize: eta 1 ln 1
+virusobj_changesize: eta 2 ln 1
+hetero: ii 12 vobj_print_virusobj
+vobj_print_virusobj: eta 1 clnp_fn FHV.ic.lmax0pmax1.clnp.c001iszero.txt+ nu_fn FHV.ic.lmax0pmax1.nu.homogeneous.txt+ q_fn FHV.ic.lmax0pmax1.q.equalclassprobs.txt+
+vobj_print_virusobj: eta 1 clnp.il:
+     0     0     0     0
+vobj_print_virusobj: eta 1 clnp.in:
+     0     0     0     0
+vobj_print_virusobj: eta 1 clnp.ip:
+     1     2     3     4
+vobj_print_virusobj: eta 1 clnp.optflag:
+     1     1     1     1
+vobj_print_virusobj: eta 1 clnp.c:
+     0     0     0     0
+vobj_print_virusobj: eta 1 cbar:
+     0     0     0     0
+vobj_print_virusobj: eta 1 BasisFunctionType 1
+vobj_print_virusobj: eta 1 R1 -1 R2 197.4
+vobj_print_virusobj: eta 1 nu:
+vobj_print_virusobj: eta 1 q 0.5
+vobj_print_virusobj: eta 2 clnp_fn FHV.ic.lmax0pmax1.clnp.perturbed.c001iszero.txt+ nu_fn FHV.ic.lmax0pmax1.nu.homogeneous.txt+ q_fn FHV.ic.lmax0pmax1.q.equalclassprobs.txt+
+vobj_print_virusobj: eta 2 clnp.il:
+     0     0     0     0
+vobj_print_virusobj: eta 2 clnp.in:
+     0     0     0     0
+vobj_print_virusobj: eta 2 clnp.ip:
+     1     2     3     4
+vobj_print_virusobj: eta 2 clnp.optflag:
+     1     1     1     1
+vobj_print_virusobj: eta 2 clnp.c:
+     0     0     0     0
+vobj_print_virusobj: eta 2 cbar:
+     0     0     0     0
+vobj_print_virusobj: eta 2 BasisFunctionType 1
+vobj_print_virusobj: eta 2 R1 -1 R2 170
+vobj_print_virusobj: eta 2 nu:
+vobj_print_virusobj: eta 2 q 0.5
+hetero: ii 13 EM_read_tilde_b fn_tilde_b callti.out.read_by_C
+hetero: ii 14 EM_extractdatasubset kmax -1
+hetero: ii 14 EM_extractdatasubset Ny=size(vk,1)=4141
+hetero: ii 15 EM_set_2Dreciprocal_in_virusobj use_vkminimalset_rather_than_vk 0
+virusobj_set_2Dreciprocal: vobj{eta}.R1<0.0 means use H_{l,p}(r) on [0,R_2)
+virusobj_set_2Dreciprocal: vobj{eta}.R1>=0.0 means use H_{l,p}(r) on (R_1,R_2) with R_1>=0
+virusobj_set_2Dreciprocal: the reciprocal-space radial basis functions are the same for all values of vobj{eta}.BasisFunctionType: 
+virusobj_set_2Dreciprocal: vobj{eta=1}.BasisFunctionType=1
+virusobj_set_2Dreciprocal: vobj{eta=2}.BasisFunctionType=1
+hetero: ii 16 misc_diary fn_diary off

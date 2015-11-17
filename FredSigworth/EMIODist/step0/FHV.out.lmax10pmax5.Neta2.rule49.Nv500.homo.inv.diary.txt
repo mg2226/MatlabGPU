@@ -1,0 +1,51 @@
+hetero: ii 19 EM_sphericalsymmetry_homogeneous
+hetero: ii 20 vobj_print_virusobj
+vobj_print_virusobj: eta 1 clnp_fn FHV.ic.lmax0pmax1.clnp.c001iszero.txt+ nu_fn FHV.ic.lmax0pmax1.nu.homogeneous.txt+ q_fn FHV.ic.lmax0pmax1.q.equalclassprobs.txt+
+vobj_print_virusobj: eta 1 clnp.il:
+     0     0     0     0
+
+vobj_print_virusobj: eta 1 clnp.in:
+     0     0     0     0
+
+vobj_print_virusobj: eta 1 clnp.ip:
+     1     2     3     4
+
+vobj_print_virusobj: eta 1 clnp.optflag:
+     1     1     1     1
+
+vobj_print_virusobj: eta 1 clnp.c:
+ -105.2826  -18.8561   14.7237   18.8588
+
+vobj_print_virusobj: eta 1 cbar:
+ -105.2826  -18.8561   14.7237   18.8588
+
+vobj_print_virusobj: eta 1 BasisFunctionType 1
+vobj_print_virusobj: eta 1 R1 -1 R2 197.4
+vobj_print_virusobj: eta 1 nu:
+vobj_print_virusobj: eta 1 q 0.5
+vobj_print_virusobj: eta 2 clnp_fn FHV.ic.lmax0pmax1.clnp.perturbed.c001iszero.txt+ nu_fn FHV.ic.lmax0pmax1.nu.homogeneous.txt+ q_fn FHV.ic.lmax0pmax1.q.equalclassprobs.txt+
+vobj_print_virusobj: eta 2 clnp.il:
+     0     0     0     0
+
+vobj_print_virusobj: eta 2 clnp.in:
+     0     0     0     0
+
+vobj_print_virusobj: eta 2 clnp.ip:
+     1     2     3     4
+
+vobj_print_virusobj: eta 2 clnp.optflag:
+     1     1     1     1
+
+vobj_print_virusobj: eta 2 clnp.c:
+ -100.9906  -43.4182  -17.3316   -7.2295
+
+vobj_print_virusobj: eta 2 cbar:
+ -100.9906  -43.4182  -17.3316   -7.2295
+
+vobj_print_virusobj: eta 2 BasisFunctionType 1
+vobj_print_virusobj: eta 2 R1 -1 R2 170
+vobj_print_virusobj: eta 2 nu:
+vobj_print_virusobj: eta 2 q 0.5
+hetero: ii 21 vobj_write_virusobj fn_clnp FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.clnp.txt fn_nu FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta1.nu.txt fn_q FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inveta1.q.txt
+hetero: ii 21 vobj_write_virusobj fn_clnp FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.clnp.txt fn_nu FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inv.eta2.nu.txt fn_q FHV.out.lmax10pmax5.Neta2.rule49.Nv500.homo.inveta2.q.txt
+hetero: ii 22 misc_diary fn_diary off

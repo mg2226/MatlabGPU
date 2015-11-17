@@ -1,0 +1,59 @@
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+
+ans =
+
+        4141           2
+
+hetero: ii 25 misc_diary fn_diary off
+vk size
+
+ans =
+
+        4141           2
+
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off
+hetero: ii 25 misc_diary fn_diary off

@@ -1,0 +1,207 @@
+\documentclass{article}
+\newcommand{\dd }{{\rm d}}
+\begin{document}
+\title{DFT and Fourier Transform}
+\author{Peter C. Doerschuk}
+\maketitle
+\section{Relationship between DFT and Fourier Transform}
+DFT:
+\begin{eqnarray}
+X_d[k]
+&=&
+\sum_{n=0}^{N-1} x_d[n] \exp\left(-i \frac{2\pi}{N} nk \right)
+\\
+x_d[n]
+&=&
+\frac{1}{N} \sum_{k=0}^{N-1} X_d[k] \exp\left(i \frac{2\pi}{N} nk \right)
+.
+\end{eqnarray}
+Fourier transform:
+\begin{eqnarray}
+X(f)
+&=&
+\int_{t=-\infty}^{+\infty} x(t) \exp\left(-i 2\pi ft\right) \dd t
+\label{eq:Xf}
+\\
+x(t)
+&=&
+\int_{f=-\infty}^{+\infty} X(f) \exp\left(i 2\pi ft\right) \dd f
+.
+\end{eqnarray}
+Suppose that $x(t)=0$ for $t<0$ and $t>T$.
+Suppose that you want to approximate Eq.~\ref{eq:Xf} by an $N$-point
+integration rule with equally-spaced abscissas ($=\delta=T/N$) and constant
+weights ($=w=T/N=\delta$).
+Let the approximate answer be denoted by $X_a(f)$.
+Let $x_d[n]=x(n\delta)$.
+Then
+\begin{eqnarray}
+X_a(f)
+&=&
+\sum_{n=0}^{N-1} x(n \delta) \exp\left(-i 2\pi f n \delta\right) \delta
+\\
+&=&
+\delta
+\sum_{n=0}^{N-1} x_d[n] \exp\left(-i 2\pi f n \frac{T}{N}\right)
+\\
+&=&
+\delta
+\sum_{n=0}^{N-1} x_d[n] \exp\left(-i \frac{2\pi}{N} (fT) n\right)
+.
+\end{eqnarray}
+Suppose you focus on $f$ such that $fT=k\in\{0,\dots,N-1\}$.
+Then
+\begin{eqnarray}
+X_a(f=k/T)
+&=&
+\delta
+\sum_{n=0}^{N-1} x_d[n] \exp\left(-i \frac{2\pi}{N} k n\right)
+\\
+&=&
+\delta
+X_d[k]
+.
+\end{eqnarray}
+\par
+Since $T/N=\delta$, I can express $T$ in the form $T=N\delta$ and then
+\begin{equation}
+X_a\left(f=\frac{k}{N\delta}\right)
+=
+\delta
+X_d[k]
+\quad
+(k\in\{0,\dots,N-1\})
+.
+\end{equation}
+\section{Sinusoidal signals}
+In continuous time,
+\begin{eqnarray}
+x(t)=\exp(i2\pi f_0 t)
+&\leftrightarrow&
+X(f)=\delta(f-f_0)
+\label{eq:continuoustime:sinusoid}
+.
+\end{eqnarray}
+In discrete time, for $k_0\in\{0,\dots,N-1\}$ let
+\begin{equation}
+x_d[n]
+=
+\exp\left(i\frac{2\pi}{N} n k_0\right)
+\label{eq:discretetime:sinusoid}
+.
+\end{equation}
+Then,
+\begin{eqnarray}
+X_d[k]
+&=&
+\sum_{n=0}^{N-1} x_d[n] \exp\left(-i \frac{2\pi}{N} nk \right)
+\\
+&=&
+\sum_{n=0}^{N-1}
+\exp\left(i\frac{2\pi}{N} n k_0\right)
+\exp\left(-i \frac{2\pi}{N} nk \right)
+\\
+&=&
+\sum_{n=0}^{N-1}
+\exp\left(-i\frac{2\pi}{N} n (k-k_0)\right)
+\label{eq:DFT:exp}
+.
+\end{eqnarray}
+Suppose $k=k_0$.
+Then
+\begin{eqnarray}
+X_d[k]
+&=&
+\sum_{n=0}^{N-1}
+\exp\left(-i\frac{2\pi}{N} n 0\right)
+\\
+&=&
+\sum_{n=0}^{N-1}
+1
+\\
+&=&
+N
+.
+\end{eqnarray}
+Now suppose $k\neq k_0$.
+The geometric sum is
+\begin{equation}
+\sum_{n=0}^{N-1}
+\rho^n
+=
+\frac{1-\rho^N}{1-\rho}
+.
+\end{equation}
+Eq.~\ref{eq:DFT:exp} is a geometric sum with
+\begin{equation}
+\rho
+=
+\exp\left(-i\frac{2\pi}{N} (k-k_0)\right)
+\end{equation}
+so that
+\begin{eqnarray}
+X_d[k]
+&=&
+\frac{
+1-\exp\left(-i\frac{2\pi}{N} (k-k_0)\right)^N
+}{
+1-\exp\left(-i\frac{2\pi}{N} (k-k_0)\right)
+}
+\\
+&=&
+\frac{
+1-\exp\left(-i 2\pi (k-k_0)\right)
+}{
+1-\exp\left(-i\frac{2\pi}{N} (k-k_0)\right)
+}
+\\
+&=&
+\frac{
+1-1
+}{
+1-\exp\left(-i\frac{2\pi}{N} (k-k_0)\right)
+}
+\\
+&=&
+0
+.
+\end{eqnarray}
+Therefore, for $k_0\in\{0,\dots,N-1\}$,
+\begin{eqnarray}
+x_d[n]
+=
+\exp\left(i\frac{2\pi}{N} n k_0\right)
+&\leftrightarrow&
+X_d[k]
+=
+N \delta_{k,k_0}
+.
+\end{eqnarray}
+\par
+Suppose you want to think of a continuous-time sinusoidal signal of the
+form shown in Eq.~\ref{eq:continuoustime:sinusoid} that is sampled to give
+$x_d[n]$ of the form shown in Eq.~\ref{eq:discretetime:sinusoid}, that is,
+\begin{eqnarray}
+x_d[n]
+&=&
+x(n\delta)
+\\
+&=&
+\exp(i2\pi f_0 n\delta)
+.
+\end{eqnarray}
+Therefore we need
+\begin{equation}
+f_0 \delta
+=
+\frac{k_0}{N}
+.
+\end{equation}
+So the only continuous time signals that will work are those with
+\begin{equation}
+f_0
+=
+\frac{k_0}{N\delta}
+\end{equation}
+where $k_0\in\{0,\dots,N-1\}$.
+\end{document}

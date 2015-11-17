@@ -1,0 +1,38 @@
+FHV Matlab v00.71 README, created by Yunhan Wang 2014-09-08
+
+UPDATE CHANGELOG WHEN YOU'VE MADE CHANGES!
+
+
+==========Installation guides ==========
+
+
+CONFIGURATION
+
+To setup current paths:
+set your file location in line192@inst_Neta2_rule49_Nv500_homo_inv.m
+set your file location in line24,26,29,31@inst_Neta2_rule49_Nv500_post.m
+run the following commands in Matlab:
+>> addpath('$FHV_MATLAB_DIR/FHV.syntheticdata4hetero00.7')
+>> addpath('$FHV_MATLAB_DIR/FredSigworth/EMIODist')
+>> addpath('$FHV_MATLAB_DIR/hetero00.71')
+
+
+TESTING and RUNNING
+
+There are four instructions (test cases) to verify our codes, with names started with "inst_". "inst_Neta2_rule49_Nv500_hetero_inv" verifies the optimization section including the function fmincon().
+Run the following commands in Matlab:
+>> matlabpool local 12 % if in parallel
+>> inst_Neta2_rule49_Nv500_fw
+>> inst_showimage
+>> inst_Neta2_rule49_Nv500_homo_inv
+>> inst_Neta2_rule49_Nv500_pre4hetero_inv
+>> inst_Neta2_rule49_Nv500_hetero_inv
+>> inst_Neta2_rule49_Nv500_post
+
+
+
+==========Testing Results ##########
+
+
+Testing results are printed in ../results/Matlab_Console.pdf
+

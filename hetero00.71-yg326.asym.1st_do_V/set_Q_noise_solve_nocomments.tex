@@ -1,0 +1,29 @@
+\documentclass{article}
+\begin{document}
+\begin{eqnarray}
+A
+&=&
+\sum_{i=1}^{N_i}
+\int_\theta
+p(\theta,\eta|\mbox{old everything and data})
+{\rm d} \theta
+\\
+B
+&=&
+\sum_{i=1}^{N_i}
+\int_\theta
+[
+(y_i - L(\theta) c_{\rm old})
+]^T
+[
+(y_i - L(\theta) c_{\rm old})
+]
+p(\theta,\eta|\mbox{old everything and data})
+{\rm d} \theta
+\nonumber\\
+\\
+Q_{\rm new}
+&=&
+B/(A N_a^2)
+\end{eqnarray}
+\end{document}

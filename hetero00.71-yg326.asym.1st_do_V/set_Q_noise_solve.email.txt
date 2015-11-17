@@ -1,0 +1,117 @@
+From pd83@ece.cornell.edu Wed Jul  8 20:00:07 2015
+Date: Wed, 8 Jul 2015 19:59:38 -0400
+From: Peter Doerschuk <pd83@ece.cornell.edu>
+To: Yunye Gong <yg326@cornell.edu>
+Cc: Peter C. Doerschuk <pd83@cornell.edu>
+Subject: does set_Q_noise_solve only work for one class problems? / Re: question about hetero, does set_Q_dV_unc work only on Class 1?
+
+Dear Yunye:
+
+Now I'm looking at set_Q_noise_solve.m .  Again, this is a function that I 
+tried not to change when I was assembling hetero out of Emma's files.
+
+I need to pass all_tilde_b to set_Q_noise_solve rather than read 
+all_tilde_b in set_Q_noise_solve.
+
+But I'm concerned that set_Q_noise_solve appears to be an algorithm for a 
+one-class problem.
+
+Many lines of code are commented out.  But it seems to me that the basic 
+idea is to make a prediction based on Class eta=1 for orientation n --
+Lc = L*vo{eta}.cbar; % \mu = L*c;
+-- then compute the prediction error --
+y_Lc = bsxfun(@minus, y(:,im2use{eta,n}), Lc);
+-- then compute sample prediction-error statistics for that orientation 
+and add to the running sum --
+A=A+sum(wri);
+B=B+ sum(y_Lc.^2)*wri;
+-- and then normalize --
+A=A*Na*Na;
+noise_var=B/A;
+
+Using Class eta=1 to make predictions is not a good approach for more than 
+one class -- the prediction will be bad for all orientations when the 
+image comes from a Class eta=2 particle.
+
+Simplest approach:
+
+Add a loop over class (eta) and sum over all eta and all orientations (n) 
+when computing sample statistics.  Weight by p_theta_eta.  Hopefully only 
+the "nearly correct" choices of eta and n contribute in a big way to the 
+sum.
+
+Or we could do a more "best prediction" sort of approach:
+
+For Image i, find the class (eta) and orientation (n) that have the 
+highest probability using p_theta_eta.
+Use that class and orientation to compute L and use L to compute the 
+prediction error.
+Compute sample statistics of the prediction error for Image i.
+Average over all images.
+
+We really should be computing the maximum likelihood estimate of 
+noise_var.  I do not understand most of the code that is commented out, 
+but I would not be surprised if that code was for a maximum likelihood 
+estimator.
+
+I see you "im2use" variable so I know you have looked at this function.
+
+Do you agree?
+
+Best regards, Peter
+
+On Wed, 8 Jul 2015, Peter Doerschuk wrote:
+
+> Dear Yunye:
+> Thank you, I will change this.  This is one of the functions that I tried not 
+> to change at all when I assembled hetero out of Emma's files.  But this 
+> clearly is setup to do only the one-class problems that Emma was working on.
+> Best regards, Peter
+>
+> On Wed, 8 Jul 2015, Yunye Gong wrote:
+>
+>> Dear Peter,
+>> 
+>> I agree with both (1) and (2) you pointed out.
+>> I check the code I have it seems that set_Q_dV_unc always assumes that
+>> eta=1 even in the very original version of hetero00.5.
+>> I think at one point there was effort made to make it work for a
+>> multi-class problem as I found two lines commented out in the code:
+>> %Neta = size(vo,1); (line 17)
+>> %for eta=1:Neta (line 30)
+>> 
+>> But I think the correct way to do it should be like what you described
+>> that we add an additional argument eta and delete line "eta=1".
+>> 
+>> Best regards,
+>> Yunye
+>> 
+>> On Wed, Jul 8, 2015 at 6:50 PM, Peter Doerschuk <pd83@ece.cornell.edu> 
+>> wrote:
+>>> Dear Yunye:
+>>> 
+>>> I'm working on adding real-valued spherical harmonics as angular basis
+>>> functions.
+>>> 
+>>> I'm trying to have the \tilde b file (needed for icosahedral harmonics) be
+>>> read only once.
+>>> 
+>>> I started looking at set_Q_dV_unc which is called at Line 335 of
+>>> EM_expmax_iterate2convergence.  It appears to me that set_Q_dV_unc always
+>>> assumes that eta=1, i.e., always works on the first class.  This is ok for
+>>> one class problems (Emma's NwV, your HK97) but is not good even for the
+>>> 2-class simulated-data FHV problem I made for the python team.
+>>> 
+>>> (1) It seems to me that one of the arguments of set_Q_dV_unc should be the
+>>> class index eta.
+>>> 
+>>> (2) Then the line "eta=1;" (Line 32) would be removed from set_Q_dV_unc.
+>>> 
+>>> Do you agree with (1) and (2)?
+>>> 
+>>> Best regards, Peter
+>> 
+>> 
+>
+>
+
